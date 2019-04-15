@@ -1,0 +1,21 @@
+<%= simple_form_for @project do |f| %>
+<%= f.input :name,
+            autofocus: true,
+            input_html: { autocomplete: "Project's name",
+              class: 'form-control form-margin-btn'} %>
+<%= f.input :address,
+            input_html: { autocomplete: "Project's address",
+              class: 'form-control form-margin-btn'} %>
+<%= f.input :monthly_rent,
+            input_html: { autocomplete: "Monthly rent",
+              class: 'form-control form-margin-btn'} %>
+<%= f.input :purchase_price,
+            input_html: { autocomplete: "Purchase's price",
+              class: 'form-control form-margin-btn'} %>
+<%= f.input :extra_works,
+            input_html: { autocomplete: "Extra works",
+              class: 'form-control form-margin-btn'} %>
+<%= f.button :submit, class: "btn btn-success btn-form-edit-new" %>
+<% end %>
+
+
