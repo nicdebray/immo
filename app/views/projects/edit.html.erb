@@ -1,2 +1,18 @@
-<h1>Projects#edit</h1>
+<h1>Projects#edit <%= @project.name %></h1>
 <p>Find me in app/views/projects/edit.html.erb</p>
+<div class="col-xs-12 col-sm-6">
+  <%= render 'shared/project_form', project: @project %>
+</div>
+</p>
+
+<div id='new-estimator'>
+  <div id="estimator-checker-button">
+    <button id="estimator-checker" class="btn btn-info">
+      Check me if you want
+    </button>
+  </div>
+  <div id="estimator-result">
+
+  </div>
+</div>
+<%= javascript_pack_tag 'estimator' %>
