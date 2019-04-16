@@ -2,7 +2,7 @@ class ProjectsController < ApplicationController
   before_action :project_find, only: [:show, :edit, :update, :destroy]
 
   def index
-    @projects = Assignment.all
+    @projects = Project.all
   end
 
   def show
@@ -14,7 +14,7 @@ class ProjectsController < ApplicationController
 
   def create
     @project = Project.new(project_params)
-    if @poject.save!
+    if @project.save!
       redirect_to projects_path
     else
       render :new
@@ -25,7 +25,7 @@ class ProjectsController < ApplicationController
   end
 
   def update
-    if @poject.update(project_params)
+    if @project.update(project_params)
       redirect_to project_path
     else
       render :new
@@ -33,7 +33,7 @@ class ProjectsController < ApplicationController
   end
 
   def destroy
-    if @poject.destroy
+    if @project.destroy
       redirect_to projects_path
     else
       render :new
@@ -42,7 +42,7 @@ class ProjectsController < ApplicationController
 
   private
   def project_params
-    params.require(:porject).permit(:name, :address, :monthly_rent, :purchase_price, :extra_works)
+    params.require(:project).permit(:name, :address, :monthly_rent, :purchase_price, :extra_works)
   end
 
   def project_find
