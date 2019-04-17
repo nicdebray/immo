@@ -3,9 +3,12 @@
 <p> <%= link_to 'new', new_project_path, class: 'btn btn-primary' %> </p>
 <% @projects.each do |project| %>
   <div class="card">
-    <%= project.name %>
-    <%= project.address %>
-    Rental Yield = <%= project.rental_yield %>%
+    <div id="project-card-name">Name:<%= project.name %></div>
+    <div id="project-card-address"></div> Address:<%= project.address %>
+    <div id="project-card-monthly-rent">Monthly Rent: <%= project.monthly_rent %>€</div>
+    <div id="project-card-purchase-price">Purchase Price: <%= project.purchase_price %>€</div>
+    <div id="project-card-extraworks">Extra Works: <%= project.extra_works %>€</div>
+    <div id="project-card-rental-yield">Rental Yield: <%= project.rental_yield %>%</div>
     <i>
     <%= link_to "", project_path(project), method: :delete, data: {confirm: "Are you sure?"}, class: "far fa-trash-alt" %>
     </i>
