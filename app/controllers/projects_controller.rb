@@ -27,7 +27,7 @@ class ProjectsController < ApplicationController
 
   def update
     if @project.update(project_params)
-      redirect_to project_path
+      redirect_to projects_path
     else
       render :new
     end
