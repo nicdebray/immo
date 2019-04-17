@@ -2,7 +2,7 @@ class ProjectsController < ApplicationController
   before_action :project_find, only: [:show, :edit, :update, :destroy]
 
   def index
-    @projects = Project.all
+    @projects = current_user.projects.all
   end
 
   def show
@@ -14,6 +14,7 @@ class ProjectsController < ApplicationController
 
   def create
     @project = Project.new(project_params)
+    @project.user = current_user
     if @project.save!
       redirect_to projects_path
     else

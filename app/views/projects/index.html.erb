@@ -5,6 +5,7 @@
   <div class="card">
     <%= project.name %>
     <%= project.address %>
+    Rental Yield = <%= project.rental_yield %>%
     <i>
     <%= link_to "", project_path(project), method: :delete, data: {confirm: "Are you sure?"}, class: "far fa-trash-alt" %>
     </i>
