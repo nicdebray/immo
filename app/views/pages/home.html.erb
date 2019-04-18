@@ -1,5 +1,5 @@
-    <h1>Vos biens immobiliers et leurs rendements locatifs</h1>
-    <p>Calculez facilement le rendement locatif de vos biens immobiliers</p>
+    <h1>Rendements locatifs</h1>
+    <h2>Calculez facilement le rendement locatif de vos biens immobiliers</h2>
     <p> <%= link_to 'New Project', new_project_path, class: 'btn btn-primary btn-homepage' %> </p>
     <p> <%= link_to 'All My Projects', projects_path, class: 'btn btn-primary btn-homepage' %> </p>
 
@@ -9,17 +9,17 @@
       <div id="estimator-content">
         <div id="purchase-price-input" class="estimator-fields">
           <label for="purchase-price-input-estimator">Purchase price:</label>
-          <input type="text" id="purchase-price-input-estimator" class="home-input-estimator">
+          <input type="number" min="0" id="purchase-price-input-estimator" class="home-input-estimator">
         </div>
 
         <div id="extra-work-input" class="estimator-fields">
           <label for="extra-works-input-estimator">Extra works:</label>
-          <input type="text" id="extra-works-input-estimator" class="home-input-estimator">
+          <input type="number" min="0" id="extra-works-input-estimator" class="home-input-estimator">
         </div>
 
         <div id="monthly-rent-input" class="estimator-fields">
           <label for="monthly-rent-input-estimator">Monthly rent:</label>
-          <input type="text" id="monthly-rent-input-estimator" class="home-input-estimator">
+          <input type="number" min="0" id="monthly-rent-input-estimator" class="home-input-estimator">
         </div>
 
         <div id="result-estimator" class="estimator-fields">
