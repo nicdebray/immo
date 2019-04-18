@@ -18,8 +18,14 @@ const estimatorHomepage = () => {
 }
 
 const estimatorClear = () => {
-  const estimatorResult = document.getElementById('result-estimator');
-  estimatorResult.innerText = '';
+  const estimatorResult10 = document.getElementById('result-estimator10');
+  const estimatorResult11 = document.getElementById('result-estimator11');
+  const estimatorResult12 = document.getElementById('result-estimator12');
+  const estimatorEraser = document.getElementById('estimator-eraser');
+  estimatorResult10.innerText = ``;
+  estimatorResult11.innerText = ``;
+  estimatorResult12.innerText = ``;
+  estimatorEraser.parentNode.removeChild(estimatorEraser);
 }
 
 const estimatorCheckBtn = document.getElementById('estimator-checker');
