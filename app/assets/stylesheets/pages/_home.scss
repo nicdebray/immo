@@ -1,4 +1,28 @@
+.hidden {
+  display: none;
+}
+
 .btn-homepage {
   font-size: 48px;
   margin: 10px 0px
 }
+
+#homepage-estimator {
+  font-size: 48px;
+  margin-top: 45px;
+}
+
+
+.home-input-estimator {
+  border-style: solid;
+  border-color: $blue;
+}
+
+.estimator-fields {
+  margin: 35px 0px;
+}
+
+#estimator-checker {
+  font-size: 48px;
+}
+

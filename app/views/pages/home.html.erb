@@ -1,4 +1,36 @@
+<div class="container-fluid">
 <h1>This is my homepage</h1>
 <p>Hello there</p>
-<p> <%= link_to 'New Project', new_project_path, class: 'btn btn-primary' %> </p>
-<p> <%= link_to 'All My Projects', projects_path, class: 'btn btn-primary' %> </p>
+<p> <%= link_to 'New Project', new_project_path, class: 'btn btn-primary btn-homepage' %> </p>
+<p> <%= link_to 'All My Projects', projects_path, class: 'btn btn-primary btn-homepage' %> </p>
+
+<!-- estimator block start  -->
+  <div id="homepage-estimator">
+    <div id="toggle-estimator">Estimate:</div>
+    <div id="estimator-content">
+      <div id="purchase-price-input" class="estimator-fields">
+        <label for="purchase-price-input-estimator">Purchase price:</label>
+        <input type="text" id="purchase-price-input-estimator" class="home-input-estimator">
+      </div>
+
+      <div id="monthly-rent-input" class="estimator-fields">
+        <label for="monthly-rent-input-estimator">Monthly rent:</label>
+        <input type="text" id="monthly-rent-input-estimator" class="home-input-estimator">
+      </div>
+
+      <div id="extra-work-input" class="estimator-fields">
+        <label for="extra-works-input-estimator">Extra works:</label>
+        <input type="text" id="extra-works-input-estimator" class="home-input-estimator">
+      </div>
+      <div id="result-estimator" class="estimator-fields">
+        <div id="result-estimator10"></div>
+        <div id="result-estimator11"></div>
+        <div id="result-estimator12"></div>
+      </div>
+    </div>
+      <button class="btn btn-success estimator-fields" id="estimator-checker"> Estimate</button>
+  </div>
+<!-- estimator block end -->
+
+</div>
+<%= javascript_pack_tag 'estimator_homepage' %>

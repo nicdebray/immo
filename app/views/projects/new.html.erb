@@ -1,18 +1,26 @@
-<h1>Projects#new</h1>
-<p>Find me in app/views/projects/new.html.erb
-<div class="col-xs-12 col-sm-6">
-  <%= render 'shared/project_form' %>
-</div>
-</p>
-
-<div id='new-estimator'>
-  <div id="estimator-checker-button">
-    <button id="estimator-checker" class="btn btn-info">
-      Check me if you want
-    </button>
+<div class="container-fluid">
+  <div>
+    <p> <%= link_to 'Home', root_path, class: 'btn btn-primary btn-homepage' %> </p>
   </div>
-  <div id="estimator-result">
-
+  <div>
+    <p> <%= link_to 'All', projects_path, class: 'btn btn-primary btn-homepage' %> </p>
   </div>
+  <h1>Projects#new</h1>
+  <p>Find me in app/views/projects/new.html.erb
+  <div class="col-xs-12 col-sm-6">
+    <%= render 'shared/project_form' %>
+  </div>
+  </p>
+
+  <div id='new-estimator'>
+    <div id="estimator-checker-button">
+      <button id="estimator-checker" class="btn btn-info">
+        Check me if you want
+      </button>
+    </div>
+    <div id="estimator-result">
+
+    </div>
+  </div>
+  <%= javascript_pack_tag 'estimator' %>
 </div>
-<%= javascript_pack_tag 'estimator' %>
