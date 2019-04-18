@@ -1,0 +1,21 @@
+html,
+body {
+  width: 100%;
+  margin: 0px;
+}
+
+html,
+body,
+.container-main {
+  height: 100%;
+}
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding-top: 20px;
+}
