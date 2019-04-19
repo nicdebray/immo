@@ -75,22 +75,32 @@ const estimatorPurchasePrice = () => {
   estimatorEraser.addEventListener('click', estimatorRentalYieldClear);
 };
 
+const removeSelected = () => {
+  const estimatorChoices = document.querySelectorAll('.description-estimator');
+  estimatorChoices.forEach((choice) => {
+    choice.classList.remove('selected-estimator');
+  });
+};
 
-const estimatorCheckBtn = document.getElementById('estimator-checker');
-estimatorCheckBtn.addEventListener('click', estimatorPurchasePrice);
+const estimatorChoices = document.querySelectorAll('.description-estimator');
 
+estimatorChoices.forEach((choice) => {
+  choice.addEventListener('click', (event) => {
+    removeSelected();
+    event.currentTarget.classList.add('selected-estimator');
+  })
+})
 
 // test
-// const estimatorCheckBtn = document.getElementById('estimator-checker');
-// estimatorCheckBtn.addEventListener('click', estimatorPurchasePrice) () => {
-//   if() {}
-//     else if () {}
-//   else {estimatorPurchasePrice}
-//     });
-
-
-
-
+ const estimatorCheckBtn = document.getElementById('estimator-checker');
+ estimatorCheckBtn.addEventListener('click', () => {
+   if(document.querySelector('.selected-estimator').innerText === 'Rental yield')
+  estimatorRentalYield();
+     else if (document.querySelector('.selected-estimator').innerText === 'Monthly Rent')
+  estimatorMonthlyRent();
+   else
+  estimatorPurchasePrice();
+     });
 
 // select estimator and show correct inputs
 
@@ -101,10 +111,7 @@ const hideAllEstimator = () => {
   });
 };
 
-
 const estimatorSelection = document.querySelectorAll('.description-estimator');
-
-
 
 estimatorSelection.forEach((estimator) => {
   estimator.addEventListener('click', (event) => {
