@@ -38,8 +38,12 @@
 #action-estimator {
   display: flex;
   justify-content: space-around;
-  margin-top: 15px;
+  margin-top: 25px;
   border-bottom: solid 1px $gray-400;
+}
+
+#action-title-estimator {
+  font-size: 56px;
 }
 
 .selected-estimator {
