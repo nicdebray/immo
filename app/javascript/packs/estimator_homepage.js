@@ -30,3 +30,20 @@ const estimatorClear = () => {
 
 const estimatorCheckBtn = document.getElementById('estimator-checker');
 estimatorCheckBtn.addEventListener('click', estimatorHomepage);
+
+
+// default value to zero removed/added when focus in out
+const formInput = document.querySelectorAll('.home-input-estimator');
+
+formInput.forEach((field) => {
+    field.addEventListener('focusin', () => {
+      if (field.value === '0') {
+      field.value = '';
+      };
+    });
+    field.addEventListener('focusout', () => {
+      if (field.value === '') {
+        field.value = '0';
+      };
+    });
+});
