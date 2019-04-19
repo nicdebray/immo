@@ -5,21 +5,21 @@
 
     <!-- estimator block start  -->
     <div id="homepage-estimator">
-      <div id="toggle-estimator">Estimate:</div>
+      <div id="toggle-estimator">Quick estimate:</div>
       <div id="estimator-content">
         <div id="purchase-price-input" class="estimator-fields">
           <label for="purchase-price-input-estimator">Purchase price:</label>
-          <input type="number" min="0" id="purchase-price-input-estimator" class="home-input-estimator">
+          <input type="number" min="0" value="0" id="purchase-price-input-estimator" class="home-input-estimator">
         </div>
 
         <div id="extra-work-input" class="estimator-fields">
           <label for="extra-works-input-estimator">Extra works:</label>
-          <input type="number" min="0" id="extra-works-input-estimator" class="home-input-estimator">
+          <input type="number" min="0" value="0" id="extra-works-input-estimator" class="home-input-estimator">
         </div>
 
         <div id="monthly-rent-input" class="estimator-fields">
           <label for="monthly-rent-input-estimator">Monthly rent:</label>
-          <input type="number" min="0" id="monthly-rent-input-estimator" class="home-input-estimator">
+          <input type="number" min="0" value="0" id="monthly-rent-input-estimator" class="home-input-estimator">
         </div>
 
         <div id="result-estimator" class="estimator-fields">
@@ -28,7 +28,9 @@
           <div id="result-estimator12"></div>
         </div>
       </div>
-        <button class="btn btn-success estimator-fields" id="estimator-checker"> Estimate</button>
+      <div id="estimator-checker">
+        <button class="btn btn-success" id="estimator-checker-btn"> Estimate</button>
+      </div>
     </div>
     <!-- estimator block end -->
 <%= javascript_pack_tag 'estimator_homepage' %>

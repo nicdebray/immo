@@ -10,19 +10,27 @@
 #homepage-estimator {
   font-size: 48px;
   margin-top: 45px;
+  padding-right: 20px;
 }
 
 
 .home-input-estimator {
   border-style: solid;
   border-color: $blue;
+  text-align: right;
+  padding-right: 10px;
 }
 
 .estimator-fields {
   margin: 35px 0px;
+  display: flex;
+  justify-content: space-between;
 }
 
-#estimator-checker {
+#estimator-checker-btn {
   font-size: 48px;
 }
 
+#estimator-checker {
+  float: right;
+}
