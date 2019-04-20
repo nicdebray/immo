@@ -4,6 +4,7 @@
 
 .home-header1 {
   font-size: 64px;
+  border-bottom: solid 1px $gray-400;
 }
 
 .home-header2 {
@@ -32,9 +33,14 @@
 }
 
 #homepage-estimator {
+  position: relative;
   font-size: 48px;
   margin-top: 50px;
   padding-right: 20px;
+  border: solid 1px $gray-400;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 1px 1px 10px $gray-300;
 }
 
 
@@ -52,12 +58,18 @@
   justify-content: space-between;
 }
 
+#estimator-content {
+  margin-bottom: 100px;
+}
+
 #estimator-checker-btn {
   font-size: 48px;
 }
 
 #estimator-checker {
-  float: right;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
 }
 
 #action-estimator {
