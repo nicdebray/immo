@@ -75,6 +75,8 @@ const estimatorPurchasePrice = () => {
   estimatorEraser.addEventListener('click', estimatorRentalYieldClear);
 };
 
+// add identifier class to the selected estimator
+
 const removeSelected = () => {
   const estimatorChoices = document.querySelectorAll('.description-estimator');
   estimatorChoices.forEach((choice) => {
@@ -91,7 +93,7 @@ estimatorChoices.forEach((choice) => {
   })
 })
 
-// test
+// run the correct estimator function
  const estimatorCheckBtn = document.getElementById('estimator-checker');
  estimatorCheckBtn.addEventListener('click', () => {
    if(document.querySelector('.selected-estimator').innerText === 'Rental yield')

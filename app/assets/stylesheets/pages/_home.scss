@@ -8,20 +8,32 @@
 
 .home-header2 {
   font-size: 48px;
+  margin-top: 30px;
+  color: $gray-700;
 }
 
 .home-nav-btn {
   margin-top: 35px;
+  display: flex;
+  justify-content: flex-start;
 }
 
-.btn-homepage {
+.btn-navigation {
   font-size: 48px;
-  margin: 10px 0px
+  margin: 10px 35px 10px 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.btn-checker {
+  font-size: 48px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 #homepage-estimator {
   font-size: 48px;
-  margin-top: 45px;
+  margin-top: 50px;
   padding-right: 20px;
 }
 
@@ -31,10 +43,11 @@
   border-color: $blue;
   text-align: right;
   padding-right: 10px;
+  color: $gray-700;
 }
 
 .estimator-fields {
-  margin: 35px 0px;
+  margin: 50px 0px;
   display: flex;
   justify-content: space-between;
 }
@@ -58,9 +71,17 @@
   font-size: 56px;
 }
 
+.description-estimator {
+  color: $gray-700;
+}
+
 .selected-estimator {
   color: $blue;
   font-weight: bolder;
   border-bottom: solid 1px $blue;
+}
 
+.label-estimator {
+  color: $gray-700;
+  font-size: 48px;
 }
