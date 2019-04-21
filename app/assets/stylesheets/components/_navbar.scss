@@ -1,4 +1,21 @@
 .navbar-main {
   height: 85px;
   background-color: $blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.navbar-main-left {
+  padding-left: 25px;
+}
+
+.navbar-main-right {
+  padding-right: 25px;
+}
+
+.navbar-main-icon {
+  font-size: 48px;
+  color: white;
+}
+

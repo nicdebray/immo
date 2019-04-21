@@ -13,10 +13,12 @@
     <div class="container-main">
       <%= render 'shared/navbar' %>
       <%= render 'shared/flashes' %>
+      <%= render 'shared/menu' %>
       <div class="container-fluid main-content">
         <%= yield %>
       </div>
       <%= render 'shared/footer' %>
     </div>
+    <%= javascript_pack_tag 'after_load_menu_all' %>
   </body>
 </html>

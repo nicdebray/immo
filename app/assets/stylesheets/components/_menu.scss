@@ -1,0 +1,24 @@
+.main-menu {
+  position: absolute;
+  z-index: 1050;
+  right: 0;
+  top: 86px;
+  background-color: white;
+  flex-direction: column;
+  min-width: 350px;
+  height: 100%;
+  padding: 50px 25px;
+  font-size: 48px;
+  box-shadow: -1px 0px 2px $gray-300;
+}
+
+.main-menu-content {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.alert {
+  z-index: 1060;
+  margin-bottom: 0;
+}
