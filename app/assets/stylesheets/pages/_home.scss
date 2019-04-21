@@ -2,21 +2,31 @@
   display: none;
 }
 
+.home-header-content {
+  background-color: red;
+  padding: 40px 15px;
+  background-size: cover;
+}
+
 .home-header1 {
   font-size: 64px;
-  border-bottom: solid 1px $gray-400;
+  color: white;
+  border-bottom: solid 1px white;
+  padding-bottom: 10px;
 }
 
 .home-header2 {
-  font-size: 48px;
+  font-size: 42px;
+  color: white;
   margin-top: 30px;
-  color: $gray-700;
+  padding-bottom: 20px;
 }
 
 .home-nav-btn {
   margin-top: 35px;
   display: flex;
   justify-content: flex-start;
+  padding-bottom: 50px;
 }
 
 .btn-navigation {
@@ -35,7 +45,7 @@
 #homepage-estimator {
   position: relative;
   font-size: 48px;
-  margin-top: 50px;
+  margin: 50px 15px 0px 15px;
   padding-right: 20px;
   border: solid 1px $gray-400;
   border-radius: 20px;

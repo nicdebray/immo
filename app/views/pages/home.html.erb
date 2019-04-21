@@ -1,12 +1,14 @@
-    <h1 class="home-header1">Rental Income from Real Estate</h1>
-    <h2 class="home-header2">Estimate the rental yield, the monthly rent or the price to pay when investing in real estate.</h2>
+    <div class="home-header-content" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url(<%= asset_path 'buildings-bckgrnd-homepage.jpg' %>);">
+      <h1 class="home-header1">Rental Income from Real Estate</h1>
+      <h2 class="home-header2">Estimate the rental yield, the monthly rent or the price to pay when investing in real estate.</h2>
 
-    <!-- navigation btn start -->
-    <div class="home-nav-btn">
-      <div> <%= link_to 'New Project', new_project_path, class: 'btn btn-primary btn-rounded btn-navigation' %> </div>
-      <div> <%= link_to 'All My Projects', projects_path, class: 'btn btn-primary btn-rounded btn-navigation' %> </div>
+      <!-- navigation btn start -->
+      <div class="home-nav-btn">
+        <div> <%= link_to 'New Project', new_project_path, class: 'btn btn-primary btn-rounded btn-navigation' %> </div>
+        <div> <%= link_to 'All My Projects', projects_path, class: 'btn btn-primary btn-rounded btn-navigation' %> </div>
+      </div>
+      <!-- navigation btn end -->
     </div>
-    <!-- navigation btn end -->
 
     <!-- estimator block start  -->
     <div id="homepage-estimator">
