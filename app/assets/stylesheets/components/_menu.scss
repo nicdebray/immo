@@ -4,21 +4,46 @@
   right: 0;
   top: 86px;
   background-color: white;
-  flex-direction: column;
-  min-width: 350px;
+  width: 550px;
   height: 100%;
-  padding: 50px 25px;
+  padding: 80px 25px;
   font-size: 48px;
-  box-shadow: -1px 0px 2px $gray-300;
+  box-shadow: -1px 0px 3px $gray-300;
+}
+
+.main-menu-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .main-menu-content {
-  display: flex;
   flex-grow: 1;
-  flex-direction: column;
 }
 
+// because alert push content down and too small - start
 .alert {
   z-index: 1060;
   margin-bottom: 0;
+  font-size: 38px;
+}
+
+.close {
+  font-size: 64px;
+}
+// because alert push content down and too small - end
+
+.main-menu-content-block {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: solid 1px $gray-300;
+}
+
+.main-menu-content-block a {
+  text-decoration: none;
+}
+
+.main-menu-footer {
+  height: 75px;
+
 }

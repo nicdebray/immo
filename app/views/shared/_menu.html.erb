@@ -1,18 +1,25 @@
 <div class="main-menu hidden">
-  <div class="main-menu-content">
-    <div class="main-menu-login">
-      <% if user_signed_in? %>
-        <div class="main-menu-email">
-          <%= current_user.email %>
-        </div>
-        <div class="main-menu-logout">
-          <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
-        </div>
-      <% else %>
-        <div class="main-menu-signin">
-          <%= link_to "Sign in", new_user_session_path %>
-        </div>
-      <% end %>
+  <div class="main-menu-container">
+    <div class="main-menu-content">
+      <div class="main-menu-login">
+        <% if user_signed_in? %>
+          <div class="main-menu-content-block main-menu-email">
+            <%= current_user.email %>
+          </div>
+          <div class="main-menu-content-block main-menu-logout">
+            <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+          </div>
+        <% else %>
+          <div class="main-menu-content-block main-menu-signin">
+            <%= link_to "Sign in", new_user_session_path %>
+          </div>
+          <div class="main-menu-content-block main-menu-signup">
+            <%= link_to "Create an account", new_user_registration_path %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="main-menu-footer">
     </div>
   </div>
 </div>
