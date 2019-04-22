@@ -1,3 +1,18 @@
+const estimatorResult = document.getElementById('result-estimator');
+const estimatorResult10 = document.getElementById('result-estimator10');
+const estimatorResult11 = document.getElementById('result-estimator11');
+const estimatorResult12 = document.getElementById('result-estimator12');
+const estimatorResultsAll = document.querySelectorAll('.result-estim');
+
+// clear results
+
+const estimatorRentalYieldClear = () => {
+  const estimatorEraser = document.getElementById('estimator-eraser');
+  estimatorEraser.parentNode.removeChild(estimatorEraser);
+  estimatorResultsAll.forEach((estimatorResultsA) => {
+    estimatorResultsA.innerText = ``;
+  });
+};
 
 // estimator rental yield
 
@@ -5,10 +20,6 @@ const estimatorRentalYield = () => {
   const purchasePrice = parseInt(document.getElementById('purchase-price-input-estimator').value);
   const monthlyRent = parseInt(document.getElementById('monthly-rent-input-estimator').value);
   const extraWorks = parseInt(document.getElementById('extra-works-input-estimator').value);
-  const estimatorResult = document.getElementById('result-estimator');
-  const estimatorResult10 = document.getElementById('result-estimator10');
-  const estimatorResult11 = document.getElementById('result-estimator11');
-  const estimatorResult12 = document.getElementById('result-estimator12');
   const netReturn10 = (monthlyRent*10)/((purchasePrice*1.15)+extraWorks);
   const netReturn11 = (monthlyRent*11)/((purchasePrice*1.15)+extraWorks);
   const netReturn12 = (monthlyRent*12)/((purchasePrice*1.15)+extraWorks);
@@ -20,28 +31,12 @@ const estimatorRentalYield = () => {
   estimatorEraser.addEventListener('click', estimatorRentalYieldClear);
 };
 
-const estimatorRentalYieldClear = () => {
-  const estimatorResult10 = document.getElementById('result-estimator10');
-  const estimatorResult11 = document.getElementById('result-estimator11');
-  const estimatorResult12 = document.getElementById('result-estimator12');
-  const estimatorEraser = document.getElementById('estimator-eraser');
-  estimatorResult10.innerText = ``;
-  estimatorResult11.innerText = ``;
-  estimatorResult12.innerText = ``;
-  estimatorEraser.parentNode.removeChild(estimatorEraser);
-};
-
-
 // estimator monthly rent
 
 const estimatorMonthlyRent = () => {
   const purchasePrice = parseInt(document.getElementById('purchase-price-input-estimator-mr').value);
   const extraWorks = parseInt(document.getElementById('extra-works-input-estimator-mr').value);
   const rentalYield = parseInt(document.getElementById('rental-yield-input-estimator-mr').value);
-  const estimatorResult = document.getElementById('result-estimator');
-  const estimatorResult10 = document.getElementById('result-estimator10');
-  const estimatorResult11 = document.getElementById('result-estimator11');
-  const estimatorResult12 = document.getElementById('result-estimator12');
   const monthlyRent10 = (((purchasePrice*1.15)+extraWorks)*(rentalYield/100))/10;
   const monthlyRent11 = (((purchasePrice*1.15)+extraWorks)*(rentalYield/100))/11;
   const monthlyRent12 = (((purchasePrice*1.15)+extraWorks)*(rentalYield/100))/12;
@@ -53,17 +48,12 @@ const estimatorMonthlyRent = () => {
   estimatorEraser.addEventListener('click', estimatorRentalYieldClear);
 };
 
-
 // estimator monthly rent
 
 const estimatorPurchasePrice = () => {
   const monthlyRent = parseInt(document.getElementById('monthly-rent-input-estimator-pp').value);
   const extraWorks = parseInt(document.getElementById('extra-works-input-estimator-pp').value);
   const rentalYield = parseInt(document.getElementById('rental-yield-input-estimator-pp').value);
-  const estimatorResult = document.getElementById('result-estimator');
-  const estimatorResult10 = document.getElementById('result-estimator10');
-  const estimatorResult11 = document.getElementById('result-estimator11');
-  const estimatorResult12 = document.getElementById('result-estimator12');
   const purchasePrice10 = (((monthlyRent*10)/(rentalYield/100))-extraWorks)/1.15;
   const purchasePrice11 = (((monthlyRent*11)/(rentalYield/100))-extraWorks)/1.15;
   const purchasePrice12 = (((monthlyRent*12)/(rentalYield/100))-extraWorks)/1.15;
@@ -94,6 +84,7 @@ estimatorChoices.forEach((choice) => {
 })
 
 // run the correct estimator function
+
  const estimatorCheckBtn = document.getElementById('estimator-checker');
  estimatorCheckBtn.addEventListener('click', () => {
    if(document.querySelector('.selected-estimator').innerText === 'Rental yield')
@@ -123,8 +114,8 @@ estimatorSelection.forEach((estimator) => {
   });
 });
 
-
 // default value to zero removed/added when focus in out
+
 const formInput = document.querySelectorAll('.home-input-estimator');
 
 formInput.forEach((field) => {
@@ -139,5 +130,3 @@ formInput.forEach((field) => {
       };
     });
 });
-
-
