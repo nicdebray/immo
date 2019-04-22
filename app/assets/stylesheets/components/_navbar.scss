@@ -1,6 +1,10 @@
 .navbar-main {
   min-height: 85px;
+  width: 100%;
   z-index: 1070;
+  position: fixed;
+  top: 0px;
+  left: 0px;
   background-color: $blue;
   display: flex;
   justify-content: space-between;
