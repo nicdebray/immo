@@ -1,10 +1,22 @@
 #btn-login {
   min-width: 200px;
   margin-bottom: 25px;
+  margin-top: 50px;
 }
 
 .login-card {
   padding-top: 50px;
+  font-size: 42px;
+}
+
+.login-card input {
+  font-size: 42px;
+}
+
+.login-card input[type="checkbox"] {
+  height: 35px;
+  width: 35px;
+  margin-top: 10px;
 }
 
 .card {
@@ -15,4 +27,18 @@
 
 #login-title {
   padding: 10px 0px;
+  font-size: 64px;
+  margin-bottom: 30px;
+}
+
+.user_remember_me {
+  margin: 25px 0px 15px 0px;
+}
+.form-check-label {
+  padding-left: 50px;
+}
+
+.login-form-other-links {
+  padding-left: 10px;
+  padding-top: 50px;
 }
