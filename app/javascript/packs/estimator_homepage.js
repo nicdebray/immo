@@ -27,10 +27,8 @@ const estimatorRentalYieldClear = () => {
 };
 
 const estimatorEraserIcon = () => {
-  const estimatorErasers = document.querySelectorAll('#estimator-eraser');
-  estimatorErasers.forEach((estimatorEraser) => {
-    estimatorEraser.addEventListener('click', estimatorRentalYieldClear);
-  });
+  const estimatorEraser = document.getElementById('estimator-eraser');
+  estimatorEraser.addEventListener('click', estimatorRentalYieldClear);
 };
 
 // estimator rental yield
