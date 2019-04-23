@@ -16,6 +16,13 @@ const estimatorRentalYieldClear = () => {
   });
 };
 
+const estimatorEraserIcon = () => {
+  const estimatorErasers = document.querySelectorAll('#estimator-eraser');
+  estimatorErasers.forEach((estimatorEraser) => {
+    estimatorEraser.addEventListener('click', estimatorRentalYieldClear);
+  });
+};
+
 // estimator rental yield
 
 const estimatorRentalYield = () => {
@@ -29,10 +36,7 @@ const estimatorRentalYield = () => {
   estimatorResult11.innerText = `Based on 11 months rent ${Math.round(netReturn11*10000) / 100} %`;
   estimatorResult12.innerText = `Based on 12 months rent ${Math.round(netReturn12*10000) / 100} %`;
   estimatorResult.insertAdjacentHTML('beforeend', `<i class="far fa-times-circle" id="estimator-eraser"></i>`);
-  const estimatorErasers = document.querySelectorAll('#estimator-eraser');
-  estimatorErasers.forEach((estimatorEraser) => {
-    estimatorEraser.addEventListener('click', estimatorRentalYieldClear);
-  })
+  estimatorEraserIcon();
 };
 
 // estimator monthly rent
@@ -48,11 +52,10 @@ const estimatorMonthlyRent = () => {
   estimatorResult11.innerText = `Based on 11 months rent ${Math.round(monthlyRent11)} €`;
   estimatorResult12.innerText = `Based on 12 months rent ${Math.round(monthlyRent12)} €`;
   estimatorResult.insertAdjacentHTML('beforeend', `<i class="far fa-times-circle" id="estimator-eraser"></i>`);
-  const estimatorEraser = document.querySelector('#estimator-eraser');
-  estimatorEraser.addEventListener('click', estimatorRentalYieldClear);
+  estimatorEraserIcon();
 };
 
-// estimator monthly rent
+// estimator purchase price
 
 const estimatorPurchasePrice = () => {
   const monthlyRent = parseInt(document.getElementById('monthly-rent-input-estimator-pp').value);
@@ -65,8 +68,7 @@ const estimatorPurchasePrice = () => {
   estimatorResult11.innerText = `Based on 11 months rent ${Math.round(purchasePrice11)} €`;
   estimatorResult12.innerText = `Based on 12 months rent ${Math.round(purchasePrice12)} €`;
   estimatorResult.insertAdjacentHTML('beforeend', `<i class="far fa-times-circle" id="estimator-eraser"></i>`);
-  const estimatorEraser = document.querySelector('#estimator-eraser');
-  estimatorEraser.addEventListener('click', estimatorRentalYieldClear);
+  estimatorEraserIcon();
 };
 
 // add identifier class to the selected estimator
