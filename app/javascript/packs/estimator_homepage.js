@@ -4,6 +4,16 @@ const estimatorResult11 = document.getElementById('result-estimator11');
 const estimatorResult12 = document.getElementById('result-estimator12');
 const estimatorResultsAll = document.querySelectorAll('.result-estim');
 
+
+// add only one clear icon
+
+const addEraserIcon = () => {
+  const estimatorResult = document.getElementById('result-estimator');
+  if (estimatorResult.children.length < 4) {
+    estimatorResult.insertAdjacentHTML('beforeend', `<i class="far fa-times-circle" id="estimator-eraser"></i>`);
+  };
+};
+
 // clear results
 
 const estimatorRentalYieldClear = () => {
@@ -35,7 +45,7 @@ const estimatorRentalYield = () => {
   estimatorResult10.innerText = `Based on 10 months rent ${Math.round(netReturn10*10000) / 100} %`;
   estimatorResult11.innerText = `Based on 11 months rent ${Math.round(netReturn11*10000) / 100} %`;
   estimatorResult12.innerText = `Based on 12 months rent ${Math.round(netReturn12*10000) / 100} %`;
-  estimatorResult.insertAdjacentHTML('beforeend', `<i class="far fa-times-circle" id="estimator-eraser"></i>`);
+  addEraserIcon();
   estimatorEraserIcon();
 };
 
@@ -51,7 +61,7 @@ const estimatorMonthlyRent = () => {
   estimatorResult10.innerText = `Based on 10 months rent ${Math.round(monthlyRent10)} €`;
   estimatorResult11.innerText = `Based on 11 months rent ${Math.round(monthlyRent11)} €`;
   estimatorResult12.innerText = `Based on 12 months rent ${Math.round(monthlyRent12)} €`;
-  estimatorResult.insertAdjacentHTML('beforeend', `<i class="far fa-times-circle" id="estimator-eraser"></i>`);
+  addEraserIcon();
   estimatorEraserIcon();
 };
 
@@ -67,7 +77,7 @@ const estimatorPurchasePrice = () => {
   estimatorResult10.innerText = `Based on 10 months rent ${Math.round(purchasePrice10)} €`;
   estimatorResult11.innerText = `Based on 11 months rent ${Math.round(purchasePrice11)} €`;
   estimatorResult12.innerText = `Based on 12 months rent ${Math.round(purchasePrice12)} €`;
-  estimatorResult.insertAdjacentHTML('beforeend', `<i class="far fa-times-circle" id="estimator-eraser"></i>`);
+  addEraserIcon();
   estimatorEraserIcon();
 };
 
