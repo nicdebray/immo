@@ -7,8 +7,10 @@ const estimatorResultsAll = document.querySelectorAll('.result-estim');
 // clear results
 
 const estimatorRentalYieldClear = () => {
-  const estimatorEraser = document.getElementById('estimator-eraser');
-  estimatorEraser.parentNode.removeChild(estimatorEraser);
+  const estimatorErasers = document.querySelectorAll('#estimator-eraser');
+  estimatorErasers.forEach((estimatorEraser) => {
+    estimatorEraser.parentNode.removeChild(estimatorEraser);
+  })
   estimatorResultsAll.forEach((estimatorResultsA) => {
     estimatorResultsA.innerText = ``;
   });
@@ -27,8 +29,10 @@ const estimatorRentalYield = () => {
   estimatorResult11.innerText = `Based on 11 months rent ${Math.round(netReturn11*10000) / 100} %`;
   estimatorResult12.innerText = `Based on 12 months rent ${Math.round(netReturn12*10000) / 100} %`;
   estimatorResult.insertAdjacentHTML('beforeend', `<i class="far fa-times-circle" id="estimator-eraser"></i>`);
-  const estimatorEraser = document.querySelector('#estimator-eraser');
-  estimatorEraser.addEventListener('click', estimatorRentalYieldClear);
+  const estimatorErasers = document.querySelectorAll('#estimator-eraser');
+  estimatorErasers.forEach((estimatorEraser) => {
+    estimatorEraser.addEventListener('click', estimatorRentalYieldClear);
+  })
 };
 
 // estimator monthly rent
