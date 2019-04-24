@@ -1,14 +1,8 @@
 const estimatorResult = document.getElementById('result-estimator');
-const estimatorResult10 = document.getElementById('result-estimator10');
-const estimatorResult11 = document.getElementById('result-estimator11');
-const estimatorResult12 = document.getElementById('result-estimator12');
-const estimatorResultsAll = document.querySelectorAll('.result-estim');
-
 
 // add only one clear icon
 
 const addEraserIcon = () => {
-  const estimatorResult = document.getElementById('result-estimator');
   if (estimatorResult.children.length < 4) {
     estimatorResult.insertAdjacentHTML('beforeend', `<i class="far fa-times-circle" id="estimator-eraser"></i>`);
   };
@@ -45,7 +39,6 @@ const generateResults = (a,b,c) => {
   });
 };
 
-
 // estimator rental yield
 
 const estimatorRentalYield = () => {
@@ -69,9 +62,6 @@ const estimatorMonthlyRent = () => {
 };
 
 // estimator purchase price
-
-
-
 
 const estimatorPurchasePrice = () => {
   const monthlyRent = parseInt(document.getElementById('monthly-rent-input-estimator-pp').value);
