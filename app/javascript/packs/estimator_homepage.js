@@ -16,20 +16,35 @@ const addEraserIcon = () => {
 
 // clear results
 
-const estimatorRentalYieldClear = () => {
-  const estimatorErasers = document.querySelectorAll('#estimator-eraser');
-  estimatorErasers.forEach((estimatorEraser) => {
-    estimatorEraser.parentNode.removeChild(estimatorEraser);
-  })
-  estimatorResultsAll.forEach((estimatorResultsA) => {
-    estimatorResultsA.innerText = ``;
-  });
+const estimatorResultsClear = () => {
+  while (estimatorResult.firstChild) {
+    estimatorResult.removeChild(estimatorResult.firstChild);
+  };
 };
 
 const estimatorEraserIcon = () => {
   const estimatorEraser = document.getElementById('estimator-eraser');
-  estimatorEraser.addEventListener('click', estimatorRentalYieldClear);
+  estimatorEraser.addEventListener('click', estimatorResultsClear);
 };
+
+// generate results
+
+const generateResults = (a,b,c) => {
+  let divResult = '';
+  const months_rent = [10, 11, 12];
+  estimatorResultsClear();
+  months_rent.forEach((n) => {
+    if(document.querySelector('.selected-estimator').innerText === 'Rental yield') {
+    divResult = `<div id="result-estimator${n}" class="result-estim"> Based on ${n} months rent ${Math.round((((b*n)/((a*1.15)+c))*10000))/100} % </div>`;}
+    else if (document.querySelector('.selected-estimator').innerText === 'Monthly Rent') {
+    divResult = `<div id="result-estimator${n}" class="result-estim"> Based on ${n} months rent ${Math.round((((a*1.15)+b)*(c/100))/n)} € </div>`;}
+    else{
+    divResult = `<div id="result-estimator${n}" class="result-estim"> Based on ${n} months rent ${Math.round((((a*n)/(c/100))-b)/1.15)} € </div>`;}
+
+    estimatorResult.insertAdjacentHTML('beforeend', divResult);
+  });
+};
+
 
 // estimator rental yield
 
@@ -37,12 +52,7 @@ const estimatorRentalYield = () => {
   const purchasePrice = parseInt(document.getElementById('purchase-price-input-estimator').value);
   const monthlyRent = parseInt(document.getElementById('monthly-rent-input-estimator').value);
   const extraWorks = parseInt(document.getElementById('extra-works-input-estimator').value);
-  const netReturn10 = (monthlyRent*10)/((purchasePrice*1.15)+extraWorks);
-  const netReturn11 = (monthlyRent*11)/((purchasePrice*1.15)+extraWorks);
-  const netReturn12 = (monthlyRent*12)/((purchasePrice*1.15)+extraWorks);
-  estimatorResult10.innerText = `Based on 10 months rent ${Math.round(netReturn10*10000) / 100} %`;
-  estimatorResult11.innerText = `Based on 11 months rent ${Math.round(netReturn11*10000) / 100} %`;
-  estimatorResult12.innerText = `Based on 12 months rent ${Math.round(netReturn12*10000) / 100} %`;
+  generateResults(purchasePrice, monthlyRent, extraWorks);
   addEraserIcon();
   estimatorEraserIcon();
 };
@@ -53,28 +63,21 @@ const estimatorMonthlyRent = () => {
   const purchasePrice = parseInt(document.getElementById('purchase-price-input-estimator-mr').value);
   const extraWorks = parseInt(document.getElementById('extra-works-input-estimator-mr').value);
   const rentalYield = parseInt(document.getElementById('rental-yield-input-estimator-mr').value);
-  const monthlyRent10 = (((purchasePrice*1.15)+extraWorks)*(rentalYield/100))/10;
-  const monthlyRent11 = (((purchasePrice*1.15)+extraWorks)*(rentalYield/100))/11;
-  const monthlyRent12 = (((purchasePrice*1.15)+extraWorks)*(rentalYield/100))/12;
-  estimatorResult10.innerText = `Based on 10 months rent ${Math.round(monthlyRent10)} €`;
-  estimatorResult11.innerText = `Based on 11 months rent ${Math.round(monthlyRent11)} €`;
-  estimatorResult12.innerText = `Based on 12 months rent ${Math.round(monthlyRent12)} €`;
+  generateResults(purchasePrice, extraWorks, rentalYield);
   addEraserIcon();
   estimatorEraserIcon();
 };
 
 // estimator purchase price
 
+
+
+
 const estimatorPurchasePrice = () => {
   const monthlyRent = parseInt(document.getElementById('monthly-rent-input-estimator-pp').value);
   const extraWorks = parseInt(document.getElementById('extra-works-input-estimator-pp').value);
   const rentalYield = parseInt(document.getElementById('rental-yield-input-estimator-pp').value);
-  const purchasePrice10 = (((monthlyRent*10)/(rentalYield/100))-extraWorks)/1.15;
-  const purchasePrice11 = (((monthlyRent*11)/(rentalYield/100))-extraWorks)/1.15;
-  const purchasePrice12 = (((monthlyRent*12)/(rentalYield/100))-extraWorks)/1.15;
-  estimatorResult10.innerText = `Based on 10 months rent ${Math.round(purchasePrice10)} €`;
-  estimatorResult11.innerText = `Based on 11 months rent ${Math.round(purchasePrice11)} €`;
-  estimatorResult12.innerText = `Based on 12 months rent ${Math.round(purchasePrice12)} €`;
+  generateResults(monthlyRent, extraWorks, rentalYield);
   addEraserIcon();
   estimatorEraserIcon();
 };
