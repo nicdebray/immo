@@ -14,7 +14,7 @@ en:
       last_attempt: "You have one more attempt before your account is locked."
       not_found_in_database: "%{authentication_keys} ou Mot de passe incorrect."
       timeout: "Your session expired. Please sign in again to continue."
-      unauthenticated: "Pour continuer, connectez-vous et inscrivez-vous."
+      unauthenticated: "Pour continuer, connectez-vous ou inscrivez-vous gratuitement."
       unconfirmed: "You have to confirm your email address before continuing."
     mailer:
       confirmation_instructions:
