@@ -28,12 +28,12 @@ const generateResults = (a,b,c) => {
   const months_rent = [10, 11, 12];
   estimatorResultsClear();
   months_rent.forEach((n) => {
-    if(document.querySelector('.selected-estimator').innerText === 'Rental yield') {
-    divResult = `<div id="result-estimator${n}" class="result-estim"> Based on ${n} months rent ${Math.round((((b*n)/((a*1.15)+c))*10000))/100} % </div>`;}
-    else if (document.querySelector('.selected-estimator').innerText === 'Monthly Rent') {
-    divResult = `<div id="result-estimator${n}" class="result-estim"> Based on ${n} months rent ${Math.round((((a*1.15)+b)*(c/100))/n)} € </div>`;}
+    if(document.querySelector('.selected-estimator').innerText === 'Rendement') {
+    divResult = `<div id="result-estimator${n}" class="result-estim"> Basé sur ${n} mois de loyer ${Math.round((((b*n)/((a*1.15)+c))*10000))/100} % </div>`;}
+    else if (document.querySelector('.selected-estimator').innerText === 'Loyer mensuel') {
+    divResult = `<div id="result-estimator${n}" class="result-estim"> Basé sur ${n} mois de loyer ${Math.round((((a*1.15)+b)*(c/100))/n)} € </div>`;}
     else{
-    divResult = `<div id="result-estimator${n}" class="result-estim"> Based on ${n} months rent ${Math.round((((a*n)/(c/100))-b)/1.15)} € </div>`;}
+    divResult = `<div id="result-estimator${n}" class="result-estim"> Basé sur ${n} mois de loyer ${Math.round((((a*n)/(c/100))-b)/1.15)} € </div>`;}
 
     estimatorResult.insertAdjacentHTML('beforeend', divResult);
   });
@@ -94,9 +94,9 @@ estimatorChoices.forEach((choice) => {
 
  const estimatorCheckBtn = document.getElementById('estimator-checker');
  estimatorCheckBtn.addEventListener('click', () => {
-   if(document.querySelector('.selected-estimator').innerText === 'Rental yield')
+   if(document.querySelector('.selected-estimator').innerText === 'Rendement')
   estimatorRentalYield();
-     else if (document.querySelector('.selected-estimator').innerText === 'Monthly Rent')
+     else if (document.querySelector('.selected-estimator').innerText === 'Loyer mensuel')
   estimatorMonthlyRent();
    else
   estimatorPurchasePrice();

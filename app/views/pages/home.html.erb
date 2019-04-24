@@ -1,59 +1,59 @@
     <div class="home-header-content" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url(<%= asset_path 'buildings-bckgrnd-homepage.jpg' %>);">
-      <h1 class="home-header1">Rental Income from Real Estate</h1>
-      <h2 class="home-header2">Estimate the rental yield, the monthly rent or the price to pay when investing in real estate.</h2>
+      <h1 class="home-header1">Rendement locatif</h1>
+      <h2 class="home-header2">Estimer votre rendement locatif mais aussi le loyer que vous devriez demander ou le prix d'achat d'un bien immobilier.</h2>
 
       <!-- navigation btn start -->
       <div class="home-nav-btn">
-        <div> <%= link_to 'New Project', new_project_path, class: 'btn btn-primary btn-rounded btn-navigation' %> </div>
-        <div> <%= link_to 'All My Projects', projects_path, class: 'btn btn-primary btn-rounded btn-navigation' %> </div>
+        <div> <%= link_to 'Nouveau Projet', new_project_path, class: 'btn btn-primary btn-rounded btn-navigation' %> </div>
+        <div> <%= link_to 'Tous Mes Projets', projects_path, class: 'btn btn-primary btn-rounded btn-navigation' %> </div>
       </div>
       <!-- navigation btn end -->
     </div>
 
     <!-- estimator title start -->
     <div class="homepage-estimator-title">
-      <h1 class="home-header3">Calculate</h1>
+      <h1 class="home-header3">Calculez</h1>
     </div>
     <!-- estimator title end -->
 
     <!-- estimator block start  -->
     <div id="homepage-estimator">
-      <div id="action-title-estimator">Quick estimator:</div>
+      <div id="action-title-estimator">Estimation rapide:</div>
       <div id="action-estimator">
-        <div class="description-estimator selected-estimator">Rental yield</div>
-        <div class="description-estimator">Monthly Rent</div>
-        <div class="description-estimator">Purchase price</div>
+        <div class="description-estimator selected-estimator">Rendement</div>
+        <div class="description-estimator">Loyer mensuel</div>
+        <div class="description-estimator">Prix d'achat</div>
       </div>
       <div id="estimator-content">
         <!-- rental yield estimator inputs start -->
         <div id="estimator-rental-yield" class="R  estimator-inputs">
           <div id="purchase-price-input" class="estimator-fields">
-            <label for="purchase-price-input-estimator" class="label-estimator">Purchase price:</label>
+            <label for="purchase-price-input-estimator" class="label-estimator">Prix d'achat:</label>
             <input type="number" min="0" value="0" id="purchase-price-input-estimator" class="home-input-estimator">
           </div>
           <div id="extra-work-input" class="estimator-fields">
-            <label for="extra-works-input-estimator" class="label-estimator">Extra works:</label>
+            <label for="extra-works-input-estimator" class="label-estimator">Travaux:</label>
             <input type="number" min="0" value="0" id="extra-works-input-estimator" class="home-input-estimator">
           </div>
           <div id="monthly-rent-input" class="estimator-fields">
-            <label for="monthly-rent-input-estimator" class="label-estimator">Monthly rent:</label>
+            <label for="monthly-rent-input-estimator" class="label-estimator">Loyer mensuel:</label>
             <input type="number" min="0" value="0" id="monthly-rent-input-estimator" class="home-input-estimator">
           </div>
         </div>
         <!-- rental yield estimator inputs end -->
 
         <!-- monthly rent estimator inputs start -->
-        <div id="estimator-monthly-rent" class="M hidden estimator-inputs">
+        <div id="estimator-monthly-rent" class="L hidden estimator-inputs">
           <div id="purchase-price-input" class="estimator-fields">
-            <label for="purchase-price-input-estimator" class="label-estimator">Purchase price:</label>
+            <label for="purchase-price-input-estimator" class="label-estimator">Prix d'achat:</label>
             <input type="number" min="0" value="0" id="purchase-price-input-estimator-mr" class="home-input-estimator">
           </div>
           <div id="extra-work-input" class="estimator-fields">
-            <label for="extra-works-input-estimator" class="label-estimator">Extra works:</label>
+            <label for="extra-works-input-estimator" class="label-estimator">Travaux:</label>
             <input type="number" min="0" value="0" id="extra-works-input-estimator-mr" class="home-input-estimator">
           </div>
           <div id="rental-yield-input" class="estimator-fields">
-            <label for="rental-yield-input-estimator" class="label-estimator">Rental yield:</label>
+            <label for="rental-yield-input-estimator" class="label-estimator">Rendement:</label>
             <input type="number" min="0" value="0" id="rental-yield-input-estimator-mr" class="home-input-estimator">
           </div>
         </div>
@@ -62,15 +62,15 @@
         <!-- purchase price estimator inputs start -->
         <div id="estimator-purchase-price" class="P hidden estimator-inputs">
           <div id="monthly-rent-input" class="estimator-fields">
-            <label for="monthly-rent-input-estimator" class="label-estimator">Monthly rent:</label>
+            <label for="monthly-rent-input-estimator" class="label-estimator">Loyer mensuel:</label>
             <input type="number" min="0" value="0" id="monthly-rent-input-estimator-pp" class="home-input-estimator">
           </div>
           <div id="extra-work-input" class="estimator-fields">
-            <label for="extra-works-input-estimator" class="label-estimator">Extra works:</label>
+            <label for="extra-works-input-estimator" class="label-estimator">Travaux:</label>
             <input type="number" min="0" value="0" id="extra-works-input-estimator-pp" class="home-input-estimator">
           </div>
           <div id="rental-yield-input" class="estimator-fields">
-            <label for="rental-yield-input-estimator" class="label-estimator">Rental yield:</label>
+            <label for="rental-yield-input-estimator" class="label-estimator">Rendement:</label>
             <input type="number" min="0" value="0" id="rental-yield-input-estimator-pp" class="home-input-estimator">
           </div>
         </div>
@@ -85,7 +85,7 @@
 
       <!-- estimator checker btn start -->
       <div id="estimator-checker">
-        <button class="btn btn-success btn-rounded btn-checker" id="estimator-checker-btn"> Estimate</button>
+        <button class="btn btn-success btn-rounded btn-checker" id="estimator-checker-btn"> Calculez</button>
       </div>
       <!-- estimator checker btn end -->
 
