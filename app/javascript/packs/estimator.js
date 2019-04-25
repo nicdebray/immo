@@ -15,7 +15,7 @@ const estimatorClear = () => {
   estimatorResult.innerText = '';
 }
 
-const estimatorCheckBtn = document.getElementById('estimator-checker');
+const estimatorCheckBtn = document.getElementById('estimator-checker-button');
 estimatorCheckBtn.addEventListener('click', estimator);
 
 

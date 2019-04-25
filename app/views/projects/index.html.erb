@@ -1,12 +1,6 @@
-<div class="container-fluid">
-  <h1>Projects#index</h1>
-  <p>Find me in app/views/projects/index.html.erb</p>
-  <div>
-    <p> <%= link_to 'Home', root_path, class: 'btn btn-primary btn-homepage' %> </p>
-  </div>
-  <div>
-    <p> <%= link_to 'New', new_project_path, class: 'btn btn-primary btn-index-all' %> </p>
-  </div>
+<div class="col-xs-12 col-lg-10 offset-lg-1 login-card">
+  <h1 id="login-title">Tous mes projets</h2>
+
   <% @projects.each do |project| %>
     <div class="card card-project col-md-12">
       <div id="project-card-name">Name: <%= project.name %></div>
