@@ -10,12 +10,16 @@
       <div id="project-card-purchase-price">Purchase Price: <%= project.purchase_price %>€</div>
       <div id="project-card-extraworks">Extra Works: <%= project.extra_works %>€</div>
       <div id="project-card-rental-yield">Rental Yield: <%= project.rental_yield %>%</div>
-      <i>
-      <%= link_to "", project_path(project), method: :delete, data: {confirm: "Are you sure?"}, class: "far fa-trash-alt" %>
-      </i>
-      <i>
-      <%= link_to "", edit_project_path(project), class: "far fa-edit" %>
-      </i>
+      <div class="card-all-edit-icon">
+        <i>
+        <%= link_to "", edit_project_path(project), class: "far fa-edit" %>
+        </i>
+      </div>
+      <div class="card-all-delete-icon">
+        <i>
+        <%= link_to "", project_path(project), method: :delete, data: {confirm: "Are you sure?"}, class: "far fa-trash-alt" %>
+        </i>
+      </div>
     </div>
   <% end %>
 </div>
