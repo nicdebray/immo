@@ -5,7 +5,7 @@ const estimator = () => {
   const estimatorResult = document.getElementById('estimator-result');
   const netReturn = (monthlyRent*10)/((purchasePrice*1.15)+extraWorks);
   estimatorResult.innerText = `${Math.round(netReturn*10000) / 100} %`;
-  estimatorResult.insertAdjacentHTML('beforeend', `<i class="fas fa-ban" id="estimator-eraser"></i>`);
+  estimatorResult.insertAdjacentHTML('beforeend', `<i class="far fa-times-circle clear-quick-checker" id="estimator-eraser"></i>`);
   const estimatorEraser = document.getElementById('estimator-eraser');
   estimatorEraser.addEventListener('click', estimatorClear);
 }
