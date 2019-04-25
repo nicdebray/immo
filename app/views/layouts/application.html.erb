@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <%= render 'shared/gtm_head' %>
     <title>Vos rendements locatifs - Immo Project</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -10,6 +11,7 @@
   </head>
 
   <body>
+    <%= render 'shared/gtm_body' %>
     <div class="container-main">
       <%= render 'shared/navbar' %>
       <%= render 'shared/navbar_for_flashes' %>
