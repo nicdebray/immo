@@ -133,5 +133,17 @@
 }
 
 .result-estim {
-  font-size: 44px;
+  font-size: 40px;
+  line-height: 125%;
+  color: $gray-700;
+}
+
+.result-estim-value {
+  font-size: 50px;
+  line-height: 150%;
+  color: black;
+}
+
+#result-estimator {
+  padding-bottom: 20px;
 }

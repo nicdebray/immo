@@ -29,11 +29,11 @@ const generateResults = (a,b,c) => {
   estimatorResultsClear();
   months_rent.forEach((n) => {
     if(document.querySelector('.selected-estimator').innerText === 'Rendement') {
-    divResult = `<div id="result-estimator${n}" class="result-estim"> Basé sur ${n} mois de loyer ${Math.round((((b*n)/((a*1.15)+c))*10000))/100} % </div>`;}
+    divResult = `<div id="result-estimator${n}" class="result-estim"> Basé sur ${n} mois de loyer <div class="result-estim-value">${Math.round((((b*n)/((a*1.15)+c))*10000))/100} %</div> </div>`;}
     else if (document.querySelector('.selected-estimator').innerText === 'Loyer mensuel') {
-    divResult = `<div id="result-estimator${n}" class="result-estim"> Basé sur ${n} mois de loyer ${Math.round((((a*1.15)+b)*(c/100))/n)} € </div>`;}
+    divResult = `<div id="result-estimator${n}" class="result-estim"> Basé sur ${n} mois de loyer <div class="result-estim-value">${Math.round((((a*1.15)+b)*(c/100))/n)} €</div> </div>`;}
     else{
-    divResult = `<div id="result-estimator${n}" class="result-estim"> Basé sur ${n} mois de loyer ${Math.round((((a*n)/(c/100))-b)/1.15)} € </div>`;}
+    divResult = `<div id="result-estimator${n}" class="result-estim"> Basé sur ${n} mois de loyer <div class="result-estim-value">${Math.round((((a*n)/(c/100))-b)/1.15)} €</div> </div>`;}
 
     estimatorResult.insertAdjacentHTML('beforeend', divResult);
   });
