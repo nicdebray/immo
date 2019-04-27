@@ -5,10 +5,11 @@ body {
 }
 
 html,
-body,
-.container-main {
+body {
   height: 100%;
+  overflow: auto;
 }
+
 
 .container-main {
   display: flex;
