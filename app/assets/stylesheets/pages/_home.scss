@@ -79,6 +79,39 @@
   justify-content: space-between;
 }
 
+.estimator-tooltip {
+  padding-left: 10px;
+}
+
+.tooltip-prix {
+  color: $gray-500;
+  font-size: 40px;
+}
+
+.estimator-tooltip-content {
+  position: absolute;
+  z-index: 1050;
+  margin-top: 15px;
+  padding: 15px;
+  background-color: white;
+  border: solid 1px $gray-400;
+  border-radius: 20px;
+  box-shadow: 1px 1px 20px $gray-300;
+}
+
+#estimator-tooltip-content-text {
+  font-size: 40px;
+  color: $gray-700;
+  padding-bottom: 10px;
+  line-height: 130%;
+}
+
+#action-ne-pas {
+  display: inline;
+  font-size: 44px;
+  color: black;
+}
+
 #estimator-content {
   margin-bottom: 100px;
 }
@@ -103,18 +136,7 @@
 #action-title-estimator {
   font-size: 58px;
   color: $pink;
-}
-
-#action-subtitle-estimator {
-  font-size: 28px;
-  color: $gray-700;
-  padding-bottom: 10px;
-}
-
-#action-ne-pas {
-  display: inline;
-  font-size: 32px;
-  color: black;
+  padding-bottom: 15px;
 }
 
 .description-estimator {
@@ -128,6 +150,7 @@
 }
 
 .label-estimator {
+  display: flex;
   color: $gray-700;
   font-size: 48px;
 }

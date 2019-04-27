@@ -19,18 +19,27 @@
     <!-- estimator block start  -->
     <div id="homepage-estimator">
       <div id="action-title-estimator">Estimation rapide:</div>
-      <div id="action-subtitle-estimator">Ne <p id="action-ne-pas">pas</p>  tenir compte des frais d'enregistrement/notaire. <br>
-      Nous incluons 15% en plus du prix d'achat dans nos calculs</div>
       <div id="action-estimator">
         <div class="description-estimator selected-estimator">Rendement</div>
         <div class="description-estimator">Loyer mensuel</div>
         <div class="description-estimator">Prix d'achat</div>
       </div>
       <div id="estimator-content">
+
         <!-- rental yield estimator inputs start -->
         <div id="estimator-rental-yield" class="R  estimator-inputs">
           <div id="purchase-price-input" class="estimator-fields">
-            <label for="purchase-price-input-estimator" class="label-estimator">Prix d'achat:</label>
+            <label for="purchase-price-input-estimator" class="label-estimator label-estimator-price">Prix d'achat
+              <div class="estimator-tooltip">
+                <i class="far fa-question-circle tooltip-prix">
+                  <div class="estimator-tooltip-content hidden">
+                  <div id="estimator-tooltip-content-text">Ne <p id="action-ne-pas">pas</p>  tenir compte des frais d'enregistrement/notaire. <br>
+                  Nous incluons 15% en plus du prix d'achat dans nos calculs
+                  </div>
+                </div>
+                </i> :
+              </div>
+            </label>
             <input type="number" min="0" value="0" id="purchase-price-input-estimator" class="home-input-estimator">
           </div>
           <div id="extra-work-input" class="estimator-fields">
@@ -47,7 +56,18 @@
         <!-- monthly rent estimator inputs start -->
         <div id="estimator-monthly-rent" class="L hidden estimator-inputs">
           <div id="purchase-price-input" class="estimator-fields">
-            <label for="purchase-price-input-estimator" class="label-estimator">Prix d'achat:</label>
+            <label for="purchase-price-input-estimator" class="label-estimator label-estimator-price">Prix d'achat
+              <div class="estimator-tooltip">
+                <i class="far fa-question-circle tooltip-prix">
+                  <div class="estimator-tooltip-content hidden">
+                  <div id="estimator-tooltip-content-text">Ne <p id="action-ne-pas">pas</p>  tenir compte des frais d'enregistrement/notaire. <br>
+                  Nous incluons 15% en plus du prix d'achat dans nos calculs
+                  </div>
+                </div>
+                </i> :
+              </div>
+
+            </label>
             <input type="number" min="0" value="0" id="purchase-price-input-estimator-mr" class="home-input-estimator">
           </div>
           <div id="extra-work-input" class="estimator-fields">

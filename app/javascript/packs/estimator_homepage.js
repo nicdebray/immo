@@ -1,4 +1,5 @@
 const estimatorResult = document.getElementById('result-estimator');
+const estimatorContent = document.getElementById('estimator-content');
 
 // add only one clear icon
 
@@ -25,6 +26,7 @@ const estimatorEraserIcon = () => {
 
 const generateResults = (a,b,c) => {
   let divResult = '';
+  let divResult2 = '';
   const months_rent = [10, 11, 12];
   estimatorResultsClear();
   months_rent.forEach((n) => {
@@ -34,7 +36,6 @@ const generateResults = (a,b,c) => {
     divResult = `<div id="result-estimator${n}" class="result-estim"> Basé sur ${n} mois de loyer <div class="result-estim-value">${Math.round((((a*1.15)+b)*(c/100))/n)} €</div> </div>`;}
     else{
     divResult = `<div id="result-estimator${n}" class="result-estim"> Basé sur ${n} mois de loyer <div class="result-estim-value">${Math.round((((a*n)/(c/100))-b)/1.15)} €</div> </div>`;}
-
     estimatorResult.insertAdjacentHTML('beforeend', divResult);
   });
 };
@@ -137,3 +138,18 @@ formInput.forEach((field) => {
       };
     });
 });
+
+// tooltip-prix
+
+const toolTipPrices = document.querySelectorAll('.estimator-tooltip');
+const toolTipPrixContents = document.querySelectorAll('.estimator-tooltip-content');
+
+
+toolTipPrices.forEach((toolTipPrice) => {
+  toolTipPrice.addEventListener('click', (event) => {
+    event.currentTarget.firstChild.nextSibling.childNodes[1].classList.toggle('hidden');
+  });
+});
+
+
+
