@@ -27,12 +27,13 @@ const estimatorEraserIcon = () => {
 const generateResults = (a,b,c) => {
   let divResult = '';
   let divResult2 = '';
+  let estimatorSelected = document.querySelector('.selected-estimator').innerText;
   const months_rent = [10, 11, 12];
   estimatorResultsClear();
   months_rent.forEach((n) => {
-    if(document.querySelector('.selected-estimator').innerText === 'Rendement') {
+    if( estimatorSelected === 'Rendement') {
     divResult = `<div id="result-estimator${n}" class="result-estim"> Basé sur ${n} mois de loyer <div class="result-estim-value">${Math.round((((b*n)/((a*1.15)+c))*10000))/100} %</div> </div>`;}
-    else if (document.querySelector('.selected-estimator').innerText === 'Loyer mensuel') {
+    else if (estimatorSelected === 'Loyer mensuel') {
     divResult = `<div id="result-estimator${n}" class="result-estim"> Basé sur ${n} mois de loyer <div class="result-estim-value">${Math.round((((a*1.15)+b)*(c/100))/n)} €</div> </div>`;}
     else{
     divResult = `<div id="result-estimator${n}" class="result-estim"> Basé sur ${n} mois de loyer <div class="result-estim-value">${Math.round((((a*n)/(c/100))-b)/1.15)} €</div> </div>`;}
@@ -43,9 +44,9 @@ const generateResults = (a,b,c) => {
 // estimator rental yield
 
 const estimatorRentalYield = () => {
-  const purchasePrice = parseInt(document.getElementById('purchase-price-input-estimator').value);
-  const monthlyRent = parseInt(document.getElementById('monthly-rent-input-estimator').value);
-  const extraWorks = parseInt(document.getElementById('extra-works-input-estimator').value);
+  const purchasePrice = parseFloat(document.getElementById('purchase-price-input-estimator').value);
+  const monthlyRent = parseFloat(document.getElementById('monthly-rent-input-estimator').value);
+  const extraWorks = parseFloat(document.getElementById('extra-works-input-estimator').value);
   generateResults(purchasePrice, monthlyRent, extraWorks);
   addEraserIcon();
   estimatorEraserIcon();
@@ -54,9 +55,9 @@ const estimatorRentalYield = () => {
 // estimator monthly rent
 
 const estimatorMonthlyRent = () => {
-  const purchasePrice = parseInt(document.getElementById('purchase-price-input-estimator-mr').value);
-  const extraWorks = parseInt(document.getElementById('extra-works-input-estimator-mr').value);
-  const rentalYield = parseInt(document.getElementById('rental-yield-input-estimator-mr').value);
+  const purchasePrice = parseFloat(document.getElementById('purchase-price-input-estimator-mr').value);
+  const extraWorks = parseFloat(document.getElementById('extra-works-input-estimator-mr').value);
+  const rentalYield = parseFloat(document.getElementById('rental-yield-input-estimator-mr').value);
   generateResults(purchasePrice, extraWorks, rentalYield);
   addEraserIcon();
   estimatorEraserIcon();
@@ -65,9 +66,9 @@ const estimatorMonthlyRent = () => {
 // estimator purchase price
 
 const estimatorPurchasePrice = () => {
-  const monthlyRent = parseInt(document.getElementById('monthly-rent-input-estimator-pp').value);
-  const extraWorks = parseInt(document.getElementById('extra-works-input-estimator-pp').value);
-  const rentalYield = parseInt(document.getElementById('rental-yield-input-estimator-pp').value);
+  const monthlyRent = parseFloat(document.getElementById('monthly-rent-input-estimator-pp').value);
+  const extraWorks = parseFloat(document.getElementById('extra-works-input-estimator-pp').value);
+  const rentalYield = parseFloat(document.getElementById('rental-yield-input-estimator-pp').value);
   generateResults(monthlyRent, extraWorks, rentalYield);
   addEraserIcon();
   estimatorEraserIcon();
