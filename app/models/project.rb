@@ -10,7 +10,7 @@ class Project < ApplicationRecord
     ((self.monthly_rent * 10) / ((self.purchase_price * 1.15) + self.extra_works) * 100).round(2)
   end
 
-  # def capital_gain(rate,years)
-  #   self.purchase_price * (((1 + (rate / 100) ** years))
-  # end
+  def capital_gain(rate,years)
+    self.purchase_price * (((1 + (rate / 100)) ** years))
+  end
 end
