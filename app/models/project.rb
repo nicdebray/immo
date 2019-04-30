@@ -6,11 +6,27 @@ class Project < ApplicationRecord
   validates :monthly_rent, presence: true
   validates :extra_works, presence: true
 
+  def acquisition_value
+    ((self.purchase_price * 1.15) + self.extra_works)
+  end
+
+  def acquisition_cash
+    acquisition_value / 3
+  end
+
   def rental_yield
     ((self.monthly_rent * 10) / ((self.purchase_price * 1.15) + self.extra_works) * 100).round(2)
   end
 
-  def capital_gain(rate,years)
-    self.purchase_price * (((1 + (rate / 100)) ** years))
+  def capital_gain_10(rate: 0.03, years: 10)
+    (self.acquisition_value * (((1 + rate)**years)) - self.acquisition_value).round(0)
+  end
+
+  def capital_gain_15(rate: 0.03, years: 15)
+    (self.acquisition_value * (((1 + rate)**years)) - self.acquisition_value).round(0)
+  end
+
+  def project_return_15
+    (((acquisition_value + capital_gain_15) - acquisition_cash) / acquisition_cash).round(2)
   end
 end
