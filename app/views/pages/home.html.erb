@@ -31,7 +31,7 @@
           <div id="purchase-price-input" class="estimator-fields">
             <label for="purchase-price-input-estimator" class="label-estimator label-estimator-price">Prix d'achat
               <div class="estimator-tooltip">
-                <i class="far fa-question-circle tooltip-prix">
+                <i class="far fa-question-circle estimator-tooltip-icon">
                   <div class="estimator-tooltip-content hidden">
                   <div id="estimator-tooltip-content-text">Ne <p id="action-ne-pas">pas</p>  tenir compte des frais d'enregistrement/notaire. <br>
                   Nous incluons 15% en plus du prix d'achat dans nos calculs
@@ -58,12 +58,12 @@
           <div id="purchase-price-input" class="estimator-fields">
             <label for="purchase-price-input-estimator" class="label-estimator label-estimator-price">Prix d'achat
               <div class="estimator-tooltip">
-                <i class="far fa-question-circle tooltip-prix">
+                <i class="far fa-question-circle estimator-tooltip-icon">
                   <div class="estimator-tooltip-content hidden">
-                  <div id="estimator-tooltip-content-text">Ne <p id="action-ne-pas">pas</p>  tenir compte des frais d'enregistrement/notaire. <br>
-                  Nous incluons 15% en plus du prix d'achat dans nos calculs.
+                    <div id="estimator-tooltip-content-text">Ne <p id="action-ne-pas">pas</p>  tenir compte des frais d'enregistrement/notaire. <br>
+                    Nous incluons 15% en plus du prix d'achat dans nos calculs.
+                    </div>
                   </div>
-                </div>
                 </i> :
               </div>
 
@@ -75,7 +75,19 @@
             <input type="number" min="0" value="0" id="extra-works-input-estimator-mr" class="home-input-estimator">
           </div>
           <div id="rental-yield-input" class="estimator-fields">
-            <label for="rental-yield-input-estimator" class="label-estimator">Rendement:</label>
+            <label for="rental-yield-input-estimator" class="label-estimator">Rendement
+
+              <div class="estimator-tooltip">
+                <i class="far fa-question-circle estimator-tooltip-icon">
+                  <div class="estimator-tooltip-content hidden">
+                    <div id="estimator-tooltip-content-text">
+                      Indiquez votre rendement désiré. Nous calculerons pour vous la valeur en rendement net et rendement brut pour ce taux.
+                    </div>
+                  </div>
+                </i> :
+              </div>
+
+            </label>
             <input type="number" min="0" value="0" id="rental-yield-input-estimator-mr" class="home-input-estimator">
           </div>
         </div>
@@ -84,7 +96,17 @@
         <!-- purchase price estimator inputs start -->
         <div id="estimator-purchase-price" class="P hidden estimator-inputs">
           <div id="monthly-rent-input" class="estimator-fields">
-            <label for="monthly-rent-input-estimator" class="label-estimator">Loyer mensuel:</label>
+            <label for="monthly-rent-input-estimator" class="label-estimator">Loyer mensuel
+              <div class="estimator-tooltip">
+                <i class="far fa-question-circle estimator-tooltip-icon">
+                  <div class="estimator-tooltip-content hidden">
+                    <div id="estimator-tooltip-content-text">
+                      Indiquez votre rendement désiré. Nous calculerons pour vous la valeur en rendement net et rendement brut pour ce taux.
+                    </div>
+                  </div>
+                </i> :
+              </div>
+            </label>
             <input type="number" min="0" value="0" id="monthly-rent-input-estimator-pp" class="home-input-estimator">
           </div>
           <div id="extra-work-input" class="estimator-fields">

@@ -140,14 +140,12 @@ formInput.forEach((field) => {
     });
 });
 
-// tooltip-prix
+// estimator tooltips icons
 
-const toolTipPrices = document.querySelectorAll('.estimator-tooltip');
-const toolTipPrixContents = document.querySelectorAll('.estimator-tooltip-content');
+const estimatorHomeToolTips = document.querySelectorAll('.estimator-tooltip');
 
-
-toolTipPrices.forEach((toolTipPrice) => {
-  toolTipPrice.addEventListener('click', (event) => {
+estimatorHomeToolTips.forEach((estimatorHomeToolTip) => {
+  estimatorHomeToolTip.addEventListener('click', (event) => {
     event.currentTarget.firstChild.nextSibling.childNodes[1].classList.toggle('hidden');
   });
 });
