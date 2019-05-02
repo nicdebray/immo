@@ -4,35 +4,23 @@
   margin: 15px 0px;
   display: grid;
   grid-template-columns: 75% 25%;
-  grid-template-rows: 17% 9% 9% 35% 12% 9% 9%;
-}
+  grid-template-rows: 17% 9% 9% 33% 12% 10% 10%;
+  height: 750px;
 
-.card-all-icons {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-
-.card-all-delete-icon {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
-
-.card-all-edit-icon {
-  position: absolute;
-  top: 15px;
-  right: 75px;
 }
 
 .project-card-name {
   grid-column-start: 1;
   grid-column-end: 1;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 2;
+  align-self: center;
+  overflow: scroll;
+}
+
+.project-card-name-content {
   color: $pink;
-  font-size: 44px;
+  font-size: 54px;
 }
 
 .project-card-address {
@@ -42,11 +30,48 @@
   grid-row-end: 2;
 }
 
+.project-card-address-content {
+  align-self: start;
+  color: $gray-700;
+}
+
+.card-all-icons {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  align-self: start;
+  justify-self: end;
+}
+
+.card-all-icons-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.card-all-delete-icon {
+  // position: absolute;
+  // top: 15px;
+  // right: 15px;
+}
+
+.card-all-edit-icon {
+  // position: absolute;
+  // top: 15px;
+  // right: 75px;
+}
+
 .project-card-data-title {
   grid-column-start: 1;
   grid-column-end: 1;
   grid-row-start: 3;
   grid-row-end: 3;
+  align-self: center;
+}
+
+.project-card-data-title-content {
+  font-weight: bolder;
 }
 
 .project-card-data {
@@ -56,11 +81,20 @@
   grid-row-end: 5;
 }
 
+.project-card-data-content {
+  font-size: 44px;
+}
+
 .project-card-rental-yield-title {
   grid-column-start: 2;
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 3;
+  align-self: center;
+}
+
+.project-card-rental-yield-title-content {
+  font-weight: bolder;
 }
 
 .project-card-rental-yield {
@@ -68,6 +102,11 @@
   grid-column-end: 2;
   grid-row-start: 4;
   grid-row-end: 4;
+  justify-self: center;
+}
+
+.project-card-rental-yield-content {
+  font-size: 44px;
 }
 
 .project-card-capital-gain-15-title {
@@ -75,15 +114,34 @@
   grid-column-end: 1;
   grid-row-start: 5;
   grid-row-end: 5;
+  align-self: center;
 }
 
-.project-card-capital-gain-15-content {
+.project-card-capital-gain-15-title-content {
+  font-weight: bolder;
+}
+
+.project-card-capital-gain-15 {
   grid-column-start: 1;
   grid-column-end: 1;
   grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+.project-card-capital-gain-15-content {
+  font-size: 44px;
+}
+
+.project-card-project-return-15 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 7;
   grid-row-end: 8;
-  background-color: $blue;
   overflow: scroll;
+}
+
+.project-card-capital-return-15-content {
+  font-size: 44px;
 }
 
 .project-return-15-text {

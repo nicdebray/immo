@@ -4,41 +4,68 @@
   </div>
   <% @projects.each do |project| %>
     <div class="card card-project col-md-12">
-      <div class="project-card-name">Projet: <%= project.name %></div>
-      <div class="project-card-address">Adresse: <%= project.address %></div>
-      <div class="project-card-data-title">
-        Information du projet:
+      <div class="project-card-name">
+        <div class="project-card-name-content">
+          Projet: <%= project.name %>
+        </div>
       </div>
-      <div class="project-card-data">
-        <div class="project-card-monthly-rent">Loyer mensuel: <%= project.monthly_rent %>€</div>
-        <div class="project-card-purchase-price">Prix d'achat: <%= project.purchase_price %>€</div>
-        <div class="project-card-extraworks">Travaux: <%= project.extra_works %>€</div>
-      </div>
-      <div class="project-card-rental-yield-title">
-        Rendement:
-      </div>
-      <div class="project-card-rental-yield"><%= project.rental_yield %>%</div>
-      <div class="project-card-capital-gain-15-title">
-        Gain en capital:
-      </div>
-      <div class="project-card-capital-gain-15-content">
-        <div class="project-card-capital-gain-15">Gain en capital (après 15 ans): <%= project.capital_gain_15 %>€ (croissance annuelle de 3%)</div>
-        <div class="project-card-project-return-15">Plus-value (après 15 ans): <%= project.project_return_15 %>x
-          <div class="project-return-15-text">
-            La valeur du bien est de l'ordre de <%= project.acquisition_value %>€ (prix d'achat + travaux). Le gain en capital sur 15 ans de <%= project.capital_gain_15 %>€ (croissance annuelle de 3%). La valeur initiale du projet <%= project.acquisition_full_price.round(0) %>€ (15% de frais compris) dont on estime qu'un tier a du être mobilisé en cash (le reste emprunté). Donc les <%= project.acquisition_cash %>€ sont devenus <%= (project.acquisition_value + project.capital_gain_15).round(0) %>€!
-          </div>
+      <div class="project-card-address">
+        <div class="project-card-address-content">
+          Adresse: <%= project.address %>
         </div>
       </div>
       <div class="card-all-icons">
-        <div class="card-all-edit-icon">
-          <i>
-          <%= link_to "", edit_project_path(project), class: "far fa-edit" %>
-          </i>
+        <div class="card-all-icons-content">
+          <div class="card-all-edit-icon">
+            <i>
+            <%= link_to "", edit_project_path(project), class: "far fa-edit" %>
+            </i>
+          </div>
+          <div class="card-all-delete-icon">
+            <i>
+            <%= link_to "", project_path(project), method: :delete, data: {confirm: "Are you sure?"}, class: "far fa-trash-alt" %>
+            </i>
+          </div>
         </div>
-        <div class="card-all-delete-icon">
-          <i>
-          <%= link_to "", project_path(project), method: :delete, data: {confirm: "Are you sure?"}, class: "far fa-trash-alt" %>
-          </i>
+      </div>
+      <div class="project-card-data-title">
+        <div class="project-card-data-title-content">
+          Information du projet:
+        </div>
+      </div>
+      <div class="project-card-data">
+        <div class="project-card-data-content">
+          <div class="project-card-monthly-rent">Loyer mensuel: <%= project.monthly_rent %>€</div>
+          <div class="project-card-purchase-price">Prix d'achat: <%= project.purchase_price %>€</div>
+          <div class="project-card-extraworks">Travaux: <%= project.extra_works %>€</div>
+        </div>
+      </div>
+      <div class="project-card-rental-yield-title">
+        <div class="project-card-rental-yield-title-content">
+          Rendement:
+        </div>
+      </div>
+      <div class="project-card-rental-yield">
+        <div class="project-card-rental-yield-content">
+          <%= project.rental_yield %>%
+        </div>
+      </div>
+      <div class="project-card-capital-gain-15-title">
+        <div class="project-card-capital-gain-15-title-content">
+          Gain en capital (après 15 ans):
+        </div>
+      </div>
+      <div class="project-card-capital-gain-15">
+        <div class="project-card-capital-gain-15-content">
+          <%= project.capital_gain_15 %>€ (+3%/an)
+        </div>
+      </div>
+      <div class="project-card-project-return-15">
+        <div class="project-card-capital-return-15-content">
+          Plus-value (après 15 ans): <%= project.project_return_15 %>x
+          <div class="project-return-15-text">
+            La valeur du bien est de l'ordre de <%= project.acquisition_value %>€ (prix d'achat + travaux). Le gain en capital sur 15 ans de <%= project.capital_gain_15 %>€ (croissance annuelle de 3%). La valeur initiale du projet <%= project.acquisition_full_price.round(0) %>€ (15% de frais compris) dont on estime qu'un tier a du être mobilisé en cash (le reste emprunté). Donc les <%= project.acquisition_cash %>€ sont devenus <%= (project.acquisition_value + project.capital_gain_15).round(0) %>€!
+          </div>
         </div>
       </div>
     </div>
