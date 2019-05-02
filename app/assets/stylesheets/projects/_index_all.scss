@@ -1,12 +1,17 @@
 .card-project {
   position: relative;
   font-size: 32px;
-  margin: 15px 0px
+  margin: 15px 0px;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 17% 9% 9% 35% 12% 9% 9%;
 }
 
-.btn-index-all {
-  font-size: 48px;
-  margin: 10px 0px
+.card-all-icons {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 .card-all-delete-icon {
@@ -22,11 +27,71 @@
 }
 
 .project-card-name {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
   color: $pink;
   font-size: 44px;
+}
+
+.project-card-address {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.project-card-data-title {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+
+.project-card-data {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.project-card-rental-yield-title {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+
+.project-card-rental-yield {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+
+.project-card-capital-gain-15-title {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 5;
+  grid-row-end: 5;
+}
+
+.project-card-capital-gain-15-content {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 6;
+  grid-row-end: 8;
+  background-color: $blue;
+  overflow: scroll;
 }
 
 .project-return-15-text {
   font-size: 28px;
   color: $gray-700;
+}
+
+.btn-index-all {
+  font-size: 48px;
+  margin: 10px 0px
 }
