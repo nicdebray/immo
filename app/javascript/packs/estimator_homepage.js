@@ -47,9 +47,13 @@ const estimatorRentalYield = () => {
   const purchasePrice = parseFloat(document.getElementById('purchase-price-input-estimator').value);
   const monthlyRent = parseFloat(document.getElementById('monthly-rent-input-estimator').value);
   const extraWorks = parseFloat(document.getElementById('extra-works-input-estimator').value);
-  generateResults(purchasePrice, monthlyRent, extraWorks);
-  addEraserIcon();
-  estimatorEraserIcon();
+  if (purchasePrice || monthlyRent != 0) {
+    generateResults(purchasePrice, monthlyRent, extraWorks);
+    addEraserIcon();
+    estimatorEraserIcon();
+  } else {
+    alert(`Prix d'achat et Loyer mensuel doivent être plus grands que zéro`);
+  };
 };
 
 // estimator monthly rent
@@ -58,9 +62,13 @@ const estimatorMonthlyRent = () => {
   const purchasePrice = parseFloat(document.getElementById('purchase-price-input-estimator-mr').value);
   const extraWorks = parseFloat(document.getElementById('extra-works-input-estimator-mr').value);
   const rentalYield = parseFloat(document.getElementById('rental-yield-input-estimator-mr').value);
-  generateResults(purchasePrice, extraWorks, rentalYield);
-  addEraserIcon();
-  estimatorEraserIcon();
+  if (purchasePrice || rentalYield != 0) {
+    generateResults(purchasePrice, extraWorks, rentalYield);
+    addEraserIcon();
+    estimatorEraserIcon();
+  } else {
+    alert(`Prix d'achat et Rendement doivent être plus grands que zéro`);
+  };
 };
 
 // estimator purchase price
@@ -69,9 +77,13 @@ const estimatorPurchasePrice = () => {
   const monthlyRent = parseFloat(document.getElementById('monthly-rent-input-estimator-pp').value);
   const extraWorks = parseFloat(document.getElementById('extra-works-input-estimator-pp').value);
   const rentalYield = parseFloat(document.getElementById('rental-yield-input-estimator-pp').value);
-  generateResults(monthlyRent, extraWorks, rentalYield);
-  addEraserIcon();
-  estimatorEraserIcon();
+  if (monthlyRent || rentalYield != 0) {
+    generateResults(monthlyRent, extraWorks, rentalYield);
+    addEraserIcon();
+    estimatorEraserIcon();
+  } else {
+    alert(`Loyer mensuel et Rendement doivent être plus grands que zéro`);
+  }
 };
 
 // add identifier class to the selected estimator
