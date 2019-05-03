@@ -14,13 +14,13 @@
   grid-column-end: 1;
   grid-row-start: 1;
   grid-row-end: 2;
-  align-self: center;
+  align-self: end;
   overflow: scroll;
 }
 
 .project-card-name-content {
   color: $pink;
-  font-size: 54px;
+  font-size: 64px;
 }
 
 .project-card-address {
@@ -32,7 +32,15 @@
 
 .project-card-address-content {
   align-self: start;
-  color: $gray-700;
+  color: $gray-500;
+}
+
+.project-card-titles {
+  color: $cyan;
+}
+
+.project-card-contents {
+  font-size: 48px;
 }
 
 .card-all-icons {
@@ -81,10 +89,6 @@
   grid-row-end: 5;
 }
 
-.project-card-data-content {
-  font-size: 44px;
-}
-
 .project-card-rental-yield-title {
   grid-column-start: 2;
   grid-column-end: 2;
@@ -103,10 +107,6 @@
   grid-row-start: 4;
   grid-row-end: 4;
   justify-self: center;
-}
-
-.project-card-rental-yield-content {
-  font-size: 44px;
 }
 
 .project-card-capital-gain-15-title {
@@ -128,20 +128,12 @@
   grid-row-end: 7;
 }
 
-.project-card-capital-gain-15-content {
-  font-size: 44px;
-}
-
 .project-card-project-return-15 {
   grid-column-start: 1;
   grid-column-end: 1;
   grid-row-start: 7;
   grid-row-end: 8;
   overflow: scroll;
-}
-
-.project-card-capital-return-15-content {
-  font-size: 44px;
 }
 
 .project-return-15-text {
