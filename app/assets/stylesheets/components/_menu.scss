@@ -31,6 +31,7 @@
 .close {
   font-size: 64px;
 }
+
 // because alert push content down and too small - end
 
 .main-menu-content-block {
@@ -45,5 +46,9 @@
 
 .main-menu-footer {
   height: 75px;
+}
 
+.menu-link-smovin {
+  color: $success;
+  font-weight: bolder;
 }
