@@ -218,3 +218,35 @@
 .home-quote-source a {
   text-decoration: none;
 }
+
+.homepage-estimator-cta {
+  padding: 5px 15px 100px 15px;
+}
+
+.home-account-cta-title h2{
+  font-size: 52px;
+  color: $green;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.home-cta-content {
+  border: solid 1px $gray-400;
+  border-radius: 20px;
+  box-shadow: 1px 1px 20px $gray-300;
+  padding: 30px 15px;
+  min-height: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home-cta-content-signin {
+  display: flex;
+}
+
+.btn-home-cta {
+  font-size: 48px;
+  padding-left: 50px;
+  padding-right: 50px;
+}

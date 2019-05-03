@@ -145,4 +145,30 @@
       </div>
     </div>
     <!-- estimator benchmark end -->
+
+    <!-- Call to action create account bottom page start -->
+    <div class="homepage-estimator-cta">
+      <div class="home-account-cta-title">
+        <% if user_signed_in? %>
+          <h2>Sauvegardez ou consultez vos estimations</h2>
+        <% else %>
+          <h2>Sauvegardez vos estimations?</h2>
+        <% end %>
+      </div>
+      <div class="home-cta-content">
+      <% if user_signed_in? %>
+        <div class="home-cta-content-signin">
+          <div> <%= link_to 'Nouveau Projet', new_project_path, class: 'btn btn-primary btn-rounded btn-navigation' %>
+          </div>
+          <div> <%= link_to 'Tous Mes Projets', projects_path, class: 'btn btn-primary btn-rounded btn-navigation' %>
+          </div>
+        </div>
+      <% else %>
+        <div class="home-cta-content-signup">
+            <%= link_to "Créer un compte", new_user_registration_path, class: 'btn btn-success btn-rounded btn-home-cta' %>
+        </div>
+      <% end %>
+      </div>
+    </div>
+    <!-- Call to action create account bottom page end -->
 <%= javascript_pack_tag 'estimator_homepage' %>
