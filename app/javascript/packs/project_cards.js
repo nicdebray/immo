@@ -2,7 +2,7 @@ const plusValues = document.querySelectorAll('.project-card-capital-return-15-co
 
 
 const plusValuesShowHide = (event) => {
-  event.currentTarget.firstElementChild.classList.toggle('hidden');
+  event.currentTarget.previousElementSibling.classList.toggle('hidden');
 };
 
 

@@ -130,7 +130,7 @@
 
 .project-card-project-return-15 {
   grid-column-start: 1;
-  grid-column-end: 1;
+  grid-column-end: end;
   grid-row-start: 7;
   grid-row-end: 8;
   overflow: scroll;
@@ -145,12 +145,25 @@
   border: solid 1px $gray-400;
   border-radius: 20px;
   box-shadow: 1px 1px 20px $gray-300;
-
   font-size: 28px;
   color: $gray-700;
+  width: 750px;
+  height: 300px;
+  overflow: scroll;
+  bottom: 100px;
 }
 
 .btn-index-all {
   font-size: 48px;
   margin: 10px 0px
+}
+
+.project-card-icon {
+      font-size: 25px;
+}
+
+.project-card-tooltip-icon {
+  color: $gray-500;
+  font-size: 40px;
+  padding-left: 5px;
 }

@@ -30,7 +30,7 @@
       </div>
       <div class="project-card-data-title project-card-titles">
         <div class="project-card-data-title-content">
-          <i class="fas fa-info"></i> Information du projet:
+          <i class="fas fa-info project-card-icon"></i> Information du projet:
         </div>
       </div>
       <div class="project-card-data">
@@ -42,7 +42,7 @@
       </div>
       <div class="project-card-rental-yield-title project-card-titles">
         <div class="project-card-rental-yield-title-content">
-          <i class="fas fa-percentage"></i> Rendement:
+          <i class="fas fa-percentage project-card-icon"></i> Rendement:
         </div>
       </div>
       <div class="project-card-rental-yield">
@@ -52,7 +52,7 @@
       </div>
       <div class="project-card-capital-gain-15-title project-card-titles">
         <div class="project-card-capital-gain-15-title-content">
-          <i class="fas fa-euro-sign"></i> Gain en capital (après 15 ans):
+          <i class="fas fa-euro-sign project-card-icon"></i> Gain en capital (après 15 ans):
         </div>
       </div>
       <div class="project-card-capital-gain-15">
@@ -61,11 +61,11 @@
         </div>
       </div>
       <div class="project-card-project-return-15">
+        <div class="project-return-15-text hidden">
+            La valeur du bien est de l'ordre de <%= project.acquisition_value %>€ (prix d'achat + travaux). Le gain en capital sur 15 ans de <%= project.capital_gain_15 %>€ (croissance annuelle de 3%). La valeur initiale du projet <%= project.acquisition_full_price.round(0) %>€ (15% de frais compris) dont on estime qu'un tier a du être mobilisé en cash (le reste emprunté). Donc les <%= project.acquisition_cash.round(0) %>€ sont devenus <%= (project.acquisition_value + project.capital_gain_15).round(0) %>€!
+        </div>
         <div class="project-card-capital-return-15-content project-card-contents">
-          Plus-value (après 15 ans): <%= project.project_return_15 %>x
-          <div class="project-return-15-text hidden">
-            La valeur du bien est de l'ordre de <%= project.acquisition_value %>€ (prix d'achat + travaux). Le gain en capital sur 15 ans de <%= project.capital_gain_15 %>€ (croissance annuelle de 3%). La valeur initiale du projet <%= project.acquisition_full_price.round(0) %>€ (15% de frais compris) dont on estime qu'un tier a du être mobilisé en cash (le reste emprunté). Donc les <%= project.acquisition_cash %>€ sont devenus <%= (project.acquisition_value + project.capital_gain_15).round(0) %>€!
-          </div>
+          Plus-value (après 15 ans): <%= project.project_return_15 %>x <i class="far fa-question-circle project-card-tooltip-icon"></i>
         </div>
       </div>
     </div>
