@@ -157,15 +157,18 @@
       </div>
       <div class="home-cta-content">
       <% if user_signed_in? %>
-        <div class="home-cta-content-signin">
-          <div> <%= link_to 'Nouveau Projet', new_project_path, class: 'btn btn-primary btn-rounded btn-navigation' %>
-          </div>
-          <div> <%= link_to 'Tous Mes Projets', projects_path, class: 'btn btn-primary btn-rounded btn-navigation' %>
-          </div>
+        <div class="home-cta-content-signin-link">
+          <%= link_to 'Nouveau Projet', new_project_path, class: 'btn btn-primary btn-rounded btn-navigation' %>
+        </div>
+        <div class="home-cta-content-signin-link">
+          <%= link_to 'Tous Mes Projets', projects_path, class: 'btn btn-primary btn-rounded btn-navigation' %>
         </div>
       <% else %>
-        <div class="home-cta-content-signup">
-            <%= link_to "Créer un compte", new_user_registration_path, class: 'btn btn-success btn-rounded btn-home-cta' %>
+        <div class="home-cta-content-not-signed-link">
+          <%= link_to "Se connecter", new_user_session_path, class: 'btn btn-info btn-rounded btn-home-cta' %>
+        </div>
+        <div class="home-cta-content-not-signed-link">
+          <%= link_to "Créer un compte", new_user_registration_path, class: 'btn btn-success btn-rounded btn-home-cta' %>
         </div>
       <% end %>
       </div>
