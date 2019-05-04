@@ -15,16 +15,29 @@
         </div>
       </div>
       <div class="card-all-icons">
-        <div class="card-all-icons-content">
-          <div class="card-all-edit-icon">
-            <i>
-            <%= link_to "", edit_project_path(project), class: "far fa-edit" %>
-            </i>
+        <div class="card-all-icons-content-dots">
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+        <div class="card-all-icons-content hidden">
+          <div class="card-all-edit">
+            <div class="card-all-edit-icon">
+              <i>
+              <%= link_to "", edit_project_path(project), class: "far fa-edit" %>
+              </i>
+            </div>
+            <div class="card-all-edit-text">
+              Editer
+            </div>
           </div>
-          <div class="card-all-delete-icon">
-            <i>
-            <%= link_to "", project_path(project), method: :delete, data: {confirm: "Are you sure?"}, class: "far fa-trash-alt" %>
-            </i>
+          <div class="card-all-delete">
+            <div class="card-all-delete-icon">
+              <i>
+              <%= link_to "", project_path(project), method: :delete, data: {confirm: "Are you sure?"}, class: "far fa-trash-alt" %>
+              </i>
+            </div>
+            <div class="card-all-delete-text">
+              Supprimer
+            </div>
           </div>
         </div>
       </div>
