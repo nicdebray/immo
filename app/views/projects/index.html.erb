@@ -34,10 +34,31 @@
         </div>
       </div>
       <div class="project-card-data">
-        <div class="project-card-data-content project-card-contents">
-          <div class="project-card-monthly-rent">Loyer mensuel: <%= project.monthly_rent %>€</div>
-          <div class="project-card-purchase-price">Prix d'achat: <%= project.purchase_price %>€</div>
-          <div class="project-card-extraworks">Travaux: <%= project.extra_works %>€</div>
+        <div class="project-card-contents">
+          <div class="project-card-monthly-rent project-card-data-content">
+            <div class="project-card-contents-label">
+              Loyer mensuel:
+            </div>
+            <div class="project-card-contents-data">
+              <%= project.monthly_rent %>€
+            </div>
+          </div>
+          <div class="project-card-purchase-price project-card-data-content">
+            <div class="project-card-contents-label">
+              Prix d'achat:
+            </div>
+            <div class="project-card-contents-data">
+              <%= project.purchase_price %>€
+            </div>
+          </div>
+          <div class="project-card-extraworks project-card-data-content">
+            <div class="project-card-contents-label">
+              Travaux:
+            </div>
+            <div class="project-card-contents-data">
+              <%= project.extra_works %>€
+            </div>
+          </div>
         </div>
       </div>
       <div class="project-card-rental-yield-title project-card-titles">

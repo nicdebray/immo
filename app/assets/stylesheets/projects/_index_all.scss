@@ -3,15 +3,15 @@
   font-size: 32px;
   margin: 15px 0px;
   display: grid;
-  grid-template-columns: 75% 25%;
+  grid-template-columns: 40% 35% 25%;
   grid-template-rows: 17% 9% 9% 33% 12% 10% 10%;
-  height: 750px;
+  height: 900px;
 
 }
 
 .project-card-name {
   grid-column-start: 1;
-  grid-column-end: 1;
+  grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
   align-self: end;
@@ -25,7 +25,7 @@
 
 .project-card-address {
   grid-column-start: 1;
-  grid-column-end: 1;
+  grid-column-end: end;
   grid-row-start: 2;
   grid-row-end: 2;
 }
@@ -44,8 +44,8 @@
 }
 
 .card-all-icons {
-  grid-column-start: 2;
-  grid-column-end: 2;
+  grid-column-start: 3;
+  grid-column-end: end;
   grid-row-start: 1;
   grid-row-end: 3;
   align-self: start;
@@ -58,21 +58,9 @@
   width: 100px;
 }
 
-.card-all-delete-icon {
-  // position: absolute;
-  // top: 15px;
-  // right: 15px;
-}
-
-.card-all-edit-icon {
-  // position: absolute;
-  // top: 15px;
-  // right: 75px;
-}
-
 .project-card-data-title {
   grid-column-start: 1;
-  grid-column-end: 1;
+  grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 3;
   align-self: center;
@@ -84,14 +72,20 @@
 
 .project-card-data {
   grid-column-start: 1;
-  grid-column-end: 1;
+  grid-column-end: 3;
   grid-row-start: 4;
   grid-row-end: 5;
 }
 
+.project-card-data-content {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 30%;
+}
+
 .project-card-rental-yield-title {
-  grid-column-start: 2;
-  grid-column-end: 2;
+  grid-column-start: 3;
+  grid-column-end: end;
   grid-row-start: 3;
   grid-row-end: 3;
   align-self: center;
@@ -102,8 +96,8 @@
 }
 
 .project-card-rental-yield {
-  grid-column-start: 2;
-  grid-column-end: 2;
+  grid-column-start: 3;
+  grid-column-end: end;
   grid-row-start: 4;
   grid-row-end: 4;
   justify-self: center;
@@ -111,7 +105,7 @@
 
 .project-card-capital-gain-15-title {
   grid-column-start: 1;
-  grid-column-end: 1;
+  grid-column-end: 3;
   grid-row-start: 5;
   grid-row-end: 5;
   align-self: center;
@@ -123,7 +117,7 @@
 
 .project-card-capital-gain-15 {
   grid-column-start: 1;
-  grid-column-end: 1;
+  grid-column-end: 3;
   grid-row-start: 6;
   grid-row-end: 7;
 }
@@ -159,7 +153,11 @@
 }
 
 .project-card-icon {
-      font-size: 25px;
+  font-size: 25px;
+}
+
+.project-card-contents-label {
+  color: $gray-600;
 }
 
 .project-card-tooltip-icon {
