@@ -1,6 +1,10 @@
+// make available some variables
 const setBtn = document.querySelector('.btn-set-ga-cookie');
 const readBtn = document.querySelector('.btn-check-ga-cookie');
 const deleteBtn = document.querySelector('.btn-delete-ga-cookie');
+
+
+// define functions
 
 const setCookie = (name, value, days) => {
   let d = new Date;
@@ -18,6 +22,7 @@ const deleteCookie = () => {
 }
 
 
+// define events to trigger functions
 setBtn.addEventListener('click', () => {
   setCookie('analytics','exclude', 1);
 });
@@ -25,3 +30,7 @@ setBtn.addEventListener('click', () => {
 readBtn.addEventListener('click', showCookie);
 
 deleteBtn.addEventListener('click', deleteCookie);
+
+
+// set the cookie onload
+setCookie('analytics','exclude', 1);
