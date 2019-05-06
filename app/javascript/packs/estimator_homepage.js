@@ -172,43 +172,24 @@ const inputRents = document.querySelectorAll('.home-input-estimator-monthly-rent
 const inputYields = document.querySelectorAll('.home-input-estimator-rental-yield');
 const inputEstimatorAll = document.querySelectorAll('.home-input-estimator');
 
-const setValuePrice = (value) => {
-  inputPrices.forEach((e) => {
+const setValue = (value, input) => {
+  input.forEach((e) => {
     e.value = value;
   });
 };
-
-const setValueExtraWorks = (value) => {
-  inputWorks.forEach((e) => {
-    e.value = value;
-  });
-};
-
-const setValueMonthlyRent = (value) => {
-  inputRents.forEach((e) => {
-    e.value = value;
-  });
-};
-
-const setValueRentalYield = (value) => {
-  inputYields.forEach((e) => {
-    e.value = value;
-  });
-};
-
 
 inputEstimatorAll.forEach((e) => {
   e.addEventListener('focusout', (event) => {
     let value = event.currentTarget.value;
     let classList = event.currentTarget.classList.value;
     if (classList.includes('home-input-estimator-price'))
-      setValuePrice(value);
+      setValue(value, inputPrices);
     else if (classList.includes('home-input-estimator-extra-works'))
-      setValueExtraWorks(value);
+      setValue(value, inputWorks);
     else if (classList.includes('home-input-estimator-monthly-rent'))
-      setValueMonthlyRent(value);
+      setValue(value, inputRents);
     else
-      setValueRentalYield(value);
+      setValue(value, inputYields);
   });
 });
 
