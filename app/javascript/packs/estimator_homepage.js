@@ -106,15 +106,18 @@ estimatorChoices.forEach((choice) => {
 
 // run the correct estimator function
 
- const estimatorCheckBtn = document.getElementById('estimator-checker');
- estimatorCheckBtn.addEventListener('click', () => {
-   if(document.querySelector('.selected-estimator').innerText === 'Rendement')
-  estimatorRentalYield();
-     else if (document.querySelector('.selected-estimator').innerText === 'Loyer mensuel')
-  estimatorMonthlyRent();
-   else
-  estimatorPurchasePrice();
-     });
+const estimatorCheckBtn = document.getElementById('estimator-checker');
+estimatorCheckBtn.addEventListener('click', () => {
+  if(document.querySelector('.selected-estimator').innerText === 'Rendement') {
+    estimatorRentalYield();
+  }
+  else if (document.querySelector('.selected-estimator').innerText === 'Loyer mensuel') {
+    estimatorMonthlyRent();
+  }
+  else {
+    estimatorPurchasePrice();
+  }
+});
 
 // select estimator and show correct inputs
 
@@ -130,9 +133,24 @@ const estimatorSelection = document.querySelectorAll('.description-estimator');
 estimatorSelection.forEach((estimator) => {
   estimator.addEventListener('click', (event) => {
     hideAllEstimator();
+    const purchasePrice = parseFloat(document.querySelector('.home-input-estimator-price').value);
+    const extraWorks = parseFloat(document.querySelector('.home-input-estimator-extra-works').value);
+    const rentalYield = parseFloat(document.querySelector('.home-input-estimator-rental-yield').value);
+    const monthlyRent = parseFloat(document.querySelector('.home-input-estimator-monthly-rent').value);
     const classEstimator = `.${event.currentTarget.innerText[0]}`;
     document.querySelector(`${classEstimator}`).classList.remove('hidden');
-    estimatorResultsClear();
+    if (classEstimator === ".R" && purchasePrice != 0 && monthlyRent != 0) {
+      estimatorRentalYield();
+    }
+    else if (classEstimator === ".L" && purchasePrice != 0 && rentalYield != 0) {
+      estimatorMonthlyRent();
+    }
+    else if (classEstimator === ".P" && monthlyRent != 0 && rentalYield != 0) {
+      estimatorPurchasePrice();
+    }
+    else {
+      estimatorResultsClear();
+    }
   });
 });
 
@@ -193,3 +211,22 @@ inputEstimatorAll.forEach((e) => {
   });
 });
 
+
+
+// testinnnnng
+
+const updatingResult = () => {
+  const purchasePrice = parseFloat(document.querySelector('.home-input-estimator-price').value);
+  const extraWorks = parseFloat(document.querySelector('.home-input-estimator-extra-works').value);
+  const rentalYield = parseFloat(document.querySelector('.home-input-estimator-rental-yield').value);
+  const monthlyRent = parseFloat(document.querySelector('.home-input-estimator-monthly-rent').value);
+  const classEstimator = `.${event.currentTarget.innerText[0]}`;
+  if (classEstimator === "R" && purchasePrice && monthlyRent > 0)
+    estimatorRentalYield();
+  else if (classEstimator === "L" && (purchasePrice && rentalYield != 0))
+    estimatorMonthlyRent();
+  else if (classEstimator === "P" && (purchasePrice && monthlyRent != 0))
+    estimatorPurchasePrice();
+  else
+    estimatorResultsClear();
+};
