@@ -68,3 +68,4 @@ gem 'jquery-rails'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'simple_form'
 gem 'devise'
+gem "chartkick"

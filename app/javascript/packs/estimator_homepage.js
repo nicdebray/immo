@@ -25,8 +25,6 @@ const estimatorEraserIcon = () => {
 // generate results
 
 const generateResults = (a,b,c) => {
-  let divResult = '';
-  let divResult2 = '';
   let estimatorSelected = document.querySelector('.selected-estimator').innerText;
   const months_rent = [10, 11, 12];
   estimatorResultsClear();
