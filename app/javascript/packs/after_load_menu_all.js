@@ -18,3 +18,7 @@ burgerMenu.forEach((icon) => {
     showHideMenu();
   });
 });
+
+
+// HIHIHIHI
+console.log(`Big JavaScript Kiss!!! If you're reading this probably you can improve this code, give feedback, tips, tricks, love :)` )
