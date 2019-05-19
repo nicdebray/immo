@@ -33,7 +33,7 @@ setInputCookieValue(purchasePriceInput,purchasePriceRegex);
 setInputCookieValue(monthlyRentInput,monthlyRentRegex);
 setInputCookieValue(extraWorksInput,extraWorksRegex);
 
-removing the cookie when leaving the page
+//removing the cookie when leaving the page
 window.addEventListener('beforeunload', (event) => {
   console.log('pizzaaa');
   return setCookie('purchase_price','',-1);
