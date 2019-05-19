@@ -5,6 +5,7 @@ class PagesController < ApplicationController
   end
 
   def shhhhht
+    @users = User.all
   end
 
 end
