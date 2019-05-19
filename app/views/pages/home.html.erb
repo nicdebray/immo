@@ -17,161 +17,170 @@
     <!-- estimator title end -->
 
     <!-- estimator block start  -->
-    <div id="homepage-estimator">
-      <div id="action-title-estimator">Estimation rapide:</div>
-      <div id="action-estimator">
-        <div class="description-estimator selected-estimator">Rendement</div>
-        <div class="description-estimator">Loyer mensuel</div>
-        <div class="description-estimator">Prix d'achat</div>
-      </div>
-      <div id="estimator-content">
-
-        <!-- rental yield estimator inputs start -->
-        <div id="estimator-rental-yield" class="R estimator-inputs">
-          <div id="purchase-price-input" class="estimator-fields">
-            <label for="purchase-price-input-estimator" class="label-estimator label-estimator-price">Prix d'achat
-              <div class="estimator-tooltip">
-                <i class="far fa-question-circle estimator-tooltip-icon">
-                  <div class="estimator-tooltip-content hidden">
-                  <div id="estimator-tooltip-content-text">Ne <p id="action-ne-pas">pas</p>  tenir compte des frais d'enregistrement/notaire. <br>
-                  Nous incluons 15% en plus du prix d'achat dans nos calculs.
-                  </div>
-                </div>
-                </i> :
-              </div>
-            </label>
-            <input type="number" min="0" value="0" id="purchase-price-input-estimator" class="home-input-estimator home-input-estimator-price">
-          </div>
-          <div id="extra-work-input" class="estimator-fields">
-            <label for="extra-works-input-estimator" class="label-estimator">Travaux:</label>
-            <input type="number" min="0" value="0" id="extra-works-input-estimator" class="home-input-estimator home-input-estimator-extra-works">
-          </div>
-          <div id="monthly-rent-input" class="estimator-fields">
-            <label for="monthly-rent-input-estimator" class="label-estimator">Loyer mensuel:</label>
-            <input type="number" min="0" value="0" id="monthly-rent-input-estimator" class="home-input-estimator home-input-estimator-monthly-rent">
-          </div>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div id="homepage-estimator" class="col-md-10">
+        <div id="action-title-estimator">Estimation rapide:</div>
+        <div id="action-estimator">
+          <div class="description-estimator selected-estimator">Rendement</div>
+          <div class="description-estimator">Loyer mensuel</div>
+          <div class="description-estimator">Prix d'achat</div>
         </div>
-        <!-- rental yield estimator inputs end -->
+        <div id="estimator-content">
 
-        <!-- monthly rent estimator inputs start -->
-        <div id="estimator-monthly-rent" class="L hidden estimator-inputs">
-          <div id="purchase-price-input" class="estimator-fields">
-            <label for="purchase-price-input-estimator" class="label-estimator label-estimator-price">Prix d'achat
-              <div class="estimator-tooltip">
-                <i class="far fa-question-circle estimator-tooltip-icon">
-                  <div class="estimator-tooltip-content hidden">
+          <!-- rental yield estimator inputs start -->
+          <div id="estimator-rental-yield" class="R estimator-inputs">
+            <div id="purchase-price-input" class="estimator-fields">
+              <label for="purchase-price-input-estimator" class="label-estimator label-estimator-price">Prix d'achat
+                <div class="estimator-tooltip">
+                  <i class="far fa-question-circle estimator-tooltip-icon">
+                    <div class="estimator-tooltip-content hidden">
                     <div id="estimator-tooltip-content-text">Ne <p id="action-ne-pas">pas</p>  tenir compte des frais d'enregistrement/notaire. <br>
                     Nous incluons 15% en plus du prix d'achat dans nos calculs.
                     </div>
                   </div>
-                </i> :
-              </div>
-            </label>
-            <input type="number" min="0" value="0" id="purchase-price-input-estimator-mr" class="home-input-estimator home-input-estimator-price">
+                  </i> :
+                </div>
+              </label>
+              <input type="number" min="0" value="0" id="purchase-price-input-estimator" class="home-input-estimator home-input-estimator-price">
+            </div>
+            <div id="extra-work-input" class="estimator-fields">
+              <label for="extra-works-input-estimator" class="label-estimator">Travaux:</label>
+              <input type="number" min="0" value="0" id="extra-works-input-estimator" class="home-input-estimator home-input-estimator-extra-works">
+            </div>
+            <div id="monthly-rent-input" class="estimator-fields">
+              <label for="monthly-rent-input-estimator" class="label-estimator">Loyer mensuel:</label>
+              <input type="number" min="0" value="0" id="monthly-rent-input-estimator" class="home-input-estimator home-input-estimator-monthly-rent">
+            </div>
           </div>
-          <div id="extra-work-input" class="estimator-fields">
-            <label for="extra-works-input-estimator" class="label-estimator">Travaux:</label>
-            <input type="number" min="0" value="0" id="extra-works-input-estimator-mr" class="home-input-estimator home-input-estimator-extra-works">
-          </div>
-          <div id="rental-yield-input" class="estimator-fields">
-            <label for="rental-yield-input-estimator" class="label-estimator">Rendement
-              <div class="estimator-tooltip">
-                <i class="far fa-question-circle estimator-tooltip-icon">
-                  <div class="estimator-tooltip-content hidden">
-                    <div id="estimator-tooltip-content-text">
-                      Indiquez votre rendement désiré. Nous calculerons pour vous la valeur en rendement net et rendement brut pour ce taux.
+          <!-- rental yield estimator inputs end -->
+
+          <!-- monthly rent estimator inputs start -->
+          <div id="estimator-monthly-rent" class="L hidden estimator-inputs">
+            <div id="purchase-price-input" class="estimator-fields">
+              <label for="purchase-price-input-estimator" class="label-estimator label-estimator-price">Prix d'achat
+                <div class="estimator-tooltip">
+                  <i class="far fa-question-circle estimator-tooltip-icon">
+                    <div class="estimator-tooltip-content hidden">
+                      <div id="estimator-tooltip-content-text">Ne <p id="action-ne-pas">pas</p>  tenir compte des frais d'enregistrement/notaire. <br>
+                      Nous incluons 15% en plus du prix d'achat dans nos calculs.
+                      </div>
                     </div>
-                  </div>
-                </i> :
-              </div>
-            </label>
-            <input type="number" min="0" value="0" id="rental-yield-input-estimator-mr" class="home-input-estimator home-input-estimator-rental-yield">
-          </div>
-        </div>
-        <!-- monthly rent estimator inputs end -->
-
-        <!-- purchase price estimator inputs start -->
-        <div id="estimator-purchase-price" class="P hidden estimator-inputs">
-          <div id="monthly-rent-input" class="estimator-fields">
-            <label for="monthly-rent-input-estimator" class="label-estimator">Loyer mensuel
-              <div class="estimator-tooltip">
-                <i class="far fa-question-circle estimator-tooltip-icon">
-                  <div class="estimator-tooltip-content hidden">
-                    <div id="estimator-tooltip-content-text">
-                      Indiquez votre rendement désiré. Nous calculerons pour vous la valeur en rendement net et rendement brut pour ce taux.
+                  </i> :
+                </div>
+              </label>
+              <input type="number" min="0" value="0" id="purchase-price-input-estimator-mr" class="home-input-estimator home-input-estimator-price">
+            </div>
+            <div id="extra-work-input" class="estimator-fields">
+              <label for="extra-works-input-estimator" class="label-estimator">Travaux:</label>
+              <input type="number" min="0" value="0" id="extra-works-input-estimator-mr" class="home-input-estimator home-input-estimator-extra-works">
+            </div>
+            <div id="rental-yield-input" class="estimator-fields">
+              <label for="rental-yield-input-estimator" class="label-estimator">Rendement
+                <div class="estimator-tooltip">
+                  <i class="far fa-question-circle estimator-tooltip-icon">
+                    <div class="estimator-tooltip-content hidden">
+                      <div id="estimator-tooltip-content-text">
+                        Indiquez votre rendement désiré. Nous calculerons pour vous la valeur en rendement net et rendement brut pour ce taux.
+                      </div>
                     </div>
-                  </div>
-                </i> :
-              </div>
-            </label>
-            <input type="number" min="0" value="0" id="monthly-rent-input-estimator-pp" class="home-input-estimator home-input-estimator-monthly-rent">
+                  </i> :
+                </div>
+              </label>
+              <input type="number" min="0" value="0" id="rental-yield-input-estimator-mr" class="home-input-estimator home-input-estimator-rental-yield">
+            </div>
           </div>
-          <div id="extra-work-input" class="estimator-fields">
-            <label for="extra-works-input-estimator" class="label-estimator">Travaux:</label>
-            <input type="number" min="0" value="0" id="extra-works-input-estimator-pp" class="home-input-estimator home-input-estimator-extra-works">
-          </div>
-          <div id="rental-yield-input" class="estimator-fields">
-            <label for="rental-yield-input-estimator" class="label-estimator">Rendement:</label>
-            <input type="number" min="0" value="0" id="rental-yield-input-estimator-pp" class="home-input-estimator home-input-estimator-rental-yield">
-          </div>
-        </div>
-        <!-- purchase price estimator inputs end -->
-        <div class="javascript-disabled">
-          <noscript>Votre navigateur ne supporte pas javascript (qui permet de faire la simulation).</noscript>
-        </div>
-        <!-- estimator results start -->
-        <div id="result-estimator" class="estimator-fields">
+          <!-- monthly rent estimator inputs end -->
 
-        </div>
-        <!-- estimator results end -->
-      </div>
+          <!-- purchase price estimator inputs start -->
+          <div id="estimator-purchase-price" class="P hidden estimator-inputs">
+            <div id="monthly-rent-input" class="estimator-fields">
+              <label for="monthly-rent-input-estimator" class="label-estimator">Loyer mensuel
+                <div class="estimator-tooltip">
+                  <i class="far fa-question-circle estimator-tooltip-icon">
+                    <div class="estimator-tooltip-content hidden">
+                      <div id="estimator-tooltip-content-text">
+                        Indiquez votre rendement désiré. Nous calculerons pour vous la valeur en rendement net et rendement brut pour ce taux.
+                      </div>
+                    </div>
+                  </i> :
+                </div>
+              </label>
+              <input type="number" min="0" value="0" id="monthly-rent-input-estimator-pp" class="home-input-estimator home-input-estimator-monthly-rent">
+            </div>
+            <div id="extra-work-input" class="estimator-fields">
+              <label for="extra-works-input-estimator" class="label-estimator">Travaux:</label>
+              <input type="number" min="0" value="0" id="extra-works-input-estimator-pp" class="home-input-estimator home-input-estimator-extra-works">
+            </div>
+            <div id="rental-yield-input" class="estimator-fields">
+              <label for="rental-yield-input-estimator" class="label-estimator">Rendement:</label>
+              <input type="number" min="0" value="0" id="rental-yield-input-estimator-pp" class="home-input-estimator home-input-estimator-rental-yield">
+            </div>
+          </div>
+          <!-- purchase price estimator inputs end -->
+          <div class="javascript-disabled">
+            <noscript>Votre navigateur ne supporte pas javascript (qui permet de faire la simulation).</noscript>
+          </div>
+          <!-- estimator results start -->
+          <div id="result-estimator" class="estimator-fields">
 
-      <!-- estimator checker btn start -->
-      <div id="estimator-checker">
-        <button class="btn btn-success btn-rounded btn-checker" id="estimator-checker-btn"> Calculez</button>
+          </div>
+          <!-- estimator results end -->
+        </div>
+
+        <!-- estimator checker btn start -->
+        <div id="estimator-checker">
+          <button class="btn btn-success btn-rounded btn-checker" id="estimator-checker-btn"> Calculez</button>
+        </div>
+        <!-- estimator checker btn end -->
       </div>
-      <!-- estimator checker btn end -->
     </div>
     <!-- estimator block end -->
 
     <!-- estimator benchmark start -->
-    <div class="homepage-estimator-benchmark">
-      <div class="home-quote-title">
-        <h2>Quel rendement locatif en Belgique?</h2>
-      </div>
-      <div class="home-quote-content">
-        <div class="home-quote-text">" En Belgique, les rendements des villes de Bruxelles (4,2 %), Anvers (4,5 %) et Gand (4,3 %) sont proches de la moyenne européenne pour les grandes zones urbaines. "</div>
-        <div class="home-quote-source"><%= link_to "La Libre", "https://www.lalibre.be/economie/immo/immobilier-le-rendement-d-une-location-est-deux-fois-plus-eleve-a-bruxelles-qu-a-londres-596e4dd4cd70d65d24d75e1d", target: :_blank %></div>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="homepage-estimator-benchmark col-md-10">
+        <div class="home-quote-title">
+          <h2>Quel rendement locatif en Belgique?</h2>
+        </div>
+        <div class="home-quote-content">
+          <div class="home-quote-text">" En Belgique, les rendements des villes de Bruxelles (4,2 %), Anvers (4,5 %) et Gand (4,3 %) sont proches de la moyenne européenne pour les grandes zones urbaines. "</div>
+          <div class="home-quote-source"><%= link_to "La Libre", "https://www.lalibre.be/economie/immo/immobilier-le-rendement-d-une-location-est-deux-fois-plus-eleve-a-bruxelles-qu-a-londres-596e4dd4cd70d65d24d75e1d", target: :_blank %></div>
+        </div>
       </div>
     </div>
     <!-- estimator benchmark end -->
 
     <!-- Call to action create account bottom page start -->
-    <div class="homepage-estimator-cta">
-      <div class="home-account-cta-title">
-        <% if user_signed_in? %>
-          <h2>Sauvegardez ou consultez vos estimations</h2>
-        <% else %>
-          <h2>Sauvegardez vos estimations?</h2>
-        <% end %>
-      </div>
-      <div class="home-cta-content">
-      <% if user_signed_in? %>
-        <div class="home-cta-content-signin-link">
-          <%= link_to 'Nouveau Projet', new_project_path, class: 'btn btn-primary btn-rounded btn-navigation' %>
+    <div class="row">
+      <div class="col-md-1"></div>
+        <div class="homepage-estimator-cta col-md-10">
+          <div class="home-account-cta-title">
+            <% if user_signed_in? %>
+              <h2>Sauvegardez ou consultez vos estimations</h2>
+            <% else %>
+              <h2>Sauvegardez vos estimations?</h2>
+            <% end %>
+          </div>
+          <div class="home-cta-content">
+          <% if user_signed_in? %>
+            <div class="home-cta-content-signin-link">
+              <%= link_to 'Nouveau Projet', new_project_path, class: 'btn btn-primary btn-rounded btn-navigation' %>
+            </div>
+            <div class="home-cta-content-signin-link">
+              <%= link_to 'Tous Mes Projets', projects_path, class: 'btn btn-primary btn-rounded btn-navigation' %>
+            </div>
+          <% else %>
+            <div class="home-cta-content-not-signed-link">
+              <%= link_to "Se connecter", new_user_session_path, class: 'btn btn-info btn-rounded btn-home-cta' %>
+            </div>
+            <div class="home-cta-content-not-signed-link">
+              <%= link_to "Créer un compte", new_user_registration_path, class: 'btn btn-success btn-rounded btn-home-cta' %>
+            </div>
+          <% end %>
+          </div>
         </div>
-        <div class="home-cta-content-signin-link">
-          <%= link_to 'Tous Mes Projets', projects_path, class: 'btn btn-primary btn-rounded btn-navigation' %>
-        </div>
-      <% else %>
-        <div class="home-cta-content-not-signed-link">
-          <%= link_to "Se connecter", new_user_session_path, class: 'btn btn-info btn-rounded btn-home-cta' %>
-        </div>
-        <div class="home-cta-content-not-signed-link">
-          <%= link_to "Créer un compte", new_user_registration_path, class: 'btn btn-success btn-rounded btn-home-cta' %>
-        </div>
-      <% end %>
-      </div>
     </div>
     <!-- Call to action create account bottom page end -->
 <%= javascript_pack_tag 'estimator_homepage' %>
