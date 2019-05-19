@@ -30,3 +30,38 @@
   background-color: rgba(231, 242, 255, 0.5);
 }
 
+@media (min-width:961px) {
+
+#estimator-checker-new-project {
+  // width: 400px;
+  font-size: 26px;
+  // margin-top: 25px;
+}
+
+.clear-quick-checker {
+  // padding-left: 15px;
+}
+
+.quick-estimator-result {
+  // padding-left: 15px;
+  // padding-top: 30px;
+}
+
+
+.ul-results {
+  // max-height: 50vh;
+  // list-style: none;
+  // padding: 0 !important;
+  // overflow: scroll;
+}
+
+.resultLi {
+  // margin-bottom: 25px;
+  // padding: 15px 25px 0px 25px;
+}
+
+.resultLi:hover {
+  // background-color: rgba(231, 242, 255, 0.5);
+}
+
+}

@@ -135,7 +135,7 @@
 }
 
 #action-title-estimator {
-  font-size: 58px;
+  font-size: 54px;
   color: $pink;
   padding-bottom: 15px;
 }
@@ -249,4 +249,254 @@
   font-size: 48px;
   padding-left: 50px;
   padding-right: 50px;
+}
+
+
+@media (min-width: 961px) {
+
+.home-header1 {
+  font-size: 50px;
+  // color: white;
+  // border-bottom: solid 1px white;
+  // padding-bottom: 10px;
+}
+
+.home-header2 {
+  font-size: 34px;
+  // color: white;
+  // margin-top: 30px;
+  // padding: 20px 0px;
+}
+
+.home-header3 {
+  font-size: 45px;
+  // color: $blue;
+  // padding: 50px 0px 0px 15px;
+}
+
+.home-nav-btn {
+  // margin-top: 35px;
+  // display: flex;
+  // justify-content: flex-start;
+  // padding-bottom: 20px
+}
+
+.btn-navigation {
+  font-size: 39px;
+  // margin: 10px 35px 10px 0px;
+  // padding-left: 40px;
+  // padding-right: 40px;
+}
+
+.btn-checker {
+  font-size: 39px;
+  // padding-left: 30px;
+  // padding-right: 30px;
+}
+
+#homepage-estimator {
+  // position: relative;
+  font-size: 39px;
+  // border: solid 1px $gray-400;
+  // border-radius: 20px;
+  // box-shadow: 1px 1px 20px $gray-300;
+  // margin: 50px 20px;
+  // padding: 20px;
+  // padding-bottom: 50px;
+}
+
+.home-input-estimator {
+  // border-style: solid;
+  // border-radius: 40px;
+  // border-color: $blue;
+  // text-align: right;
+  // padding-right: 30px;
+  // color: $gray-700;
+  // width: 475px;
+}
+
+.home-input-estimator:focus {
+  // outline: none !important;
+  // border: solid 1px $yellow;
+  // box-shadow: 1px 1px 15px $yellow;
+}
+
+.estimator-fields {
+  // margin: 50px 0px;
+  // display: flex;
+  // justify-content: space-between;
+}
+
+.estimator-tooltip {
+  // padding-left: 10px;
+}
+
+.estimator-tooltip-icon {
+  // color: $gray-500;
+  // font-size: 36px;
+}
+
+.estimator-tooltip-content {
+  // position: absolute;
+  // z-index: 1050;
+  // margin-top: 15px;
+  // padding: 20px;
+  // background-color: white;
+  // border: solid 1px $gray-400;
+  // border-radius: 20px;
+  // box-shadow: 1px 1px 20px $gray-300;
+}
+
+#estimator-tooltip-content-text {
+  // font-family: $body-font;
+  // font-size: 31px;
+  // color: $gray-700;
+  // padding-bottom: 10px;
+  // line-height: 130%;
+}
+
+#action-ne-pas {
+  // display: inline;
+  // font-size: 34px;
+  // color: black;
+}
+
+#estimator-content {
+  // margin-bottom: 100px;
+}
+
+#estimator-checker-btn {
+  // font-size: 43px;
+}
+
+#estimator-checker {
+  // position: absolute;
+  // right: 20px;
+  // bottom: 50px;
+}
+
+#action-estimator {
+  // display: flex;
+  // justify-content: space-around;
+  // margin-top: 25px;
+  // border-bottom: solid 1px $gray-400;
+}
+
+#action-title-estimator {
+  // font-size: 52px;
+  // color: $pink;
+  // padding-bottom: 15px;
+}
+
+.description-estimator {
+  // color: $gray-700;
+}
+
+.selected-estimator {
+  // color: $blue;
+  // font-weight: bolder;
+  // border-bottom: solid 1px $blue;
+}
+
+.label-estimator {
+  // display: flex;
+  // color: $gray-700;
+  font-size: 39px;
+}
+
+.result-estim {
+  font-size: 33px;
+  // line-height: 125%;
+  // color: $gray-700;
+}
+
+.result-estim-value {
+  font-size: 45px;
+  // line-height: 150%;
+  // color: black;
+}
+
+#result-estimator {
+  // padding-bottom: 20px;
+}
+
+.javascript-disabled {
+  // position: absolute;
+  // right: 20px;
+  // bottom: 7px;
+  // color: $red;
+  font-size: 19px;
+  // text-align: right;
+}
+
+.homepage-estimator-benchmark {
+  // padding: 5px 15px 100px 15px;
+}
+
+.home-quote-title h2{
+  font-size: 42px;
+  // color: #6f42c1;
+  // padding-bottom: 15px;
+  // text-align: center;
+}
+
+.home-quote-content {
+  // border: solid 1px $gray-400;
+  // border-radius: 20px;
+  // box-shadow: 1px 1px 20px $gray-300;
+  // padding: 30px 15px;
+}
+
+.home-quote-text {
+  font-size: 31px;
+  // font-style: italic;
+  // color: $gray-700;
+  // text-align: justify;
+  // padding: 5px 20px;
+  // line-height: 135%;
+}
+
+.home-quote-source {
+  font-size: 20px;
+  // text-align: right;
+  // text-decoration: none;
+  // padding-right: 20px;
+}
+
+.home-quote-source a {
+  // text-decoration: none;
+}
+
+.homepage-estimator-cta {
+  // padding: 5px 15px 100px 15px;
+}
+
+.home-account-cta-title h2{
+  font-size: 47px;
+  // color: $green;
+  // padding-bottom: 15px;
+  // text-align: center;
+}
+
+.home-cta-content {
+  // border: solid 1px $gray-400;
+  // border-radius: 20px;
+  // box-shadow: 1px 1px 20px $gray-300;
+  // padding: 30px 15px;
+  // min-height: 250px;
+  // display: flex;
+  // justify-content: space-around;
+  // align-items: center;
+}
+
+.home-cta-content a{
+  // margin-right: 0;
+}
+
+.btn-home-cta {
+  font-size: 39px;
+  // padding-left: 50px;
+  // padding-right: 50px;
+}
+
 }
