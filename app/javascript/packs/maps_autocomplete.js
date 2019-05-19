@@ -81,6 +81,7 @@ const removeSuggest = () => {
   });
 };
 
+
 searchInput.addEventListener('keyup', getAddresses);
 
 // when focus-ing remove suggestions if click outside and
