@@ -25,10 +25,6 @@ const setPurchaseCookieValue = () => {
 
 setPurchaseCookieValue();
 
-setCookie('purchase_price','',-1);
-
-
-
 // removing the cookie when leaving the page
 window.addEventListener('beforeunload', (event) => {
   console.log('pizzaaa');
