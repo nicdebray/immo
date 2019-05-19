@@ -1,31 +1,39 @@
+// where to insert the cookie value
 const purchasePriceInput = document.getElementById('purchase-price');
+const monthlyRentInput = document.getElementById('monthly-rent');
+const extraWorksInput = document.getElementById('extra-works');
 
+// regex to find the cookie
+const purchasePriceRegex = /purchase_price=\d+/;
+const monthlyRentRegex = /monthly_rent=\d+/;
+const extraWorksRegex = /extra_works=\d+/;
+
+// set up the cookie
 const setCookie = (name, value, days) => {
   let d = new Date;
   d.setTime(d.getTime() + 24*60*60*1000*days);
   document.cookie = `${name}=${value};path=/;expires=${d.toUTCString()}`;
 };
 
-const getCookiePriceValue = () => {
-  console.log(document.cookie);
-  const regExPrice = /purchase_price=\d+/;
-  const cookieValue = document.cookie.match(regExPrice);
-  console.log(cookieValue);
-  if(cookieValue === '0' || cookieValue === null){
-    return "";
-  } else {
-    const cookiePriceValue = cookieValue[0].split('=')[1];
-    return cookiePriceValue;
-  }
+// retrieve the cookie value
+const getCookieValue = (regex) => {
+  const cookieValue = document.cookie.match(regex);
+  if(cookieValue != null) {
+    const cookieExactValue = cookieValue[0].split('=')[1];
+    return cookieExactValue;
+  };
 };
 
-const setPurchaseCookieValue = () => {
-  purchasePriceInput.value = getCookiePriceValue();
-}
+// push the retrieved cookie value into the right input field
+const setInputCookieValue = (input, regex) => {
+  input.value = getCookieValue(regex);
+};
 
-setPurchaseCookieValue();
+setInputCookieValue(purchasePriceInput,purchasePriceRegex);
+setInputCookieValue(monthlyRentInput,monthlyRentRegex);
+setInputCookieValue(extraWorksInput,extraWorksRegex);
 
-// removing the cookie when leaving the page
+removing the cookie when leaving the page
 window.addEventListener('beforeunload', (event) => {
   console.log('pizzaaa');
   return setCookie('purchase_price','',-1);
