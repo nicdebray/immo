@@ -1,9 +1,9 @@
-// where to pick the input from the user
+// where to pick the input from
 const purchasePrices = document.querySelectorAll('#purchase-price-input-estimator');
 const monthlyRents = document.querySelectorAll('#monthly-rent-input-estimator');
 const extraWorks = document.querySelectorAll('#extra-works-input-estimator');
 
-// cookie names set up
+// cookie names
 const purchasePriceName = 'purchase_price';
 const monthlyRentName = 'monthly_rent';
 const extraWorksName = 'extra_works';
@@ -19,7 +19,7 @@ const setCookie = (name, value, days) => {
 const getInput = (array, cookieName) => {
   array.forEach((element) => {
     element.addEventListener('focusout', event => {
-      if(cookieValue(element) != 0) {
+      if(element.value != 0) {
         const value = element.value;
         setCookie(cookieName,value, 1);
       }
