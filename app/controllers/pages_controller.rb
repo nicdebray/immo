@@ -6,5 +6,4 @@ class PagesController < ApplicationController
 
   def shhhhht
   end
-
 end

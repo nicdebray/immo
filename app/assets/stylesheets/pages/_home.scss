@@ -46,6 +46,16 @@
   padding-right: 30px;
 }
 
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.row-sides {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 #homepage-estimator {
   position: relative;
   font-size: 48px;
@@ -218,7 +228,7 @@
 }
 
 .homepage-estimator-cta {
-  padding: 5px 15px 100px 15px;
+  padding: 5px 20px 100px 20px;
 }
 
 .home-account-cta-title h2{
@@ -267,7 +277,7 @@
 }
 
 .home-header3 {
-  font-size: 45px;
+  font-size: 47px;
   // color: $blue;
   // padding: 50px 0px 0px 15px;
 }
@@ -430,12 +440,12 @@
 
 .homepage-estimator-benchmark {
   // padding: 5px 15px 100px 15px;
-  min-width: 1000px;
+  // min-width: 1000px;
   max-width: 1000px;
 }
 
 .home-quote-title h2{
-  font-size: 42px;
+  font-size: 47px;
   // color: #6f42c1;
   // padding-bottom: 15px;
   // text-align: center;
