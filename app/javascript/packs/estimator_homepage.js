@@ -1,5 +1,13 @@
 const estimatorResult = document.getElementById('result-estimator');
 const estimatorContent = document.getElementById('estimator-content');
+const estimatorSaveLink = document.getElementById('estimator-save-link');
+const estimatorCheckBtn = document.getElementById('estimator-checker');
+
+// class toggle
+
+const showHideElement = (e, c) => {
+  e.classList.toggle(c);
+  };
 
 // add only one clear icon
 
@@ -104,7 +112,6 @@ estimatorChoices.forEach((choice) => {
 
 // run the correct estimator function
 
-const estimatorCheckBtn = document.getElementById('estimator-checker');
 estimatorCheckBtn.addEventListener('click', () => {
   if(document.querySelector('.selected-estimator').innerText === 'Rendement') {
     estimatorRentalYield();
