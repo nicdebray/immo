@@ -1,2 +1,12 @@
-<h1>Articles#show</h1>
-<p>Find me in app/views/articles/show.html.erb</p>
+<div class="article-container-s">
+  <h1><%= @article.title %></h1>
+  <div class="article-body-s">
+    <%= @article.body %>
+  </div>
+</div>
+
+<div>
+  <% if @article.user == current_user %>
+  <div><%= link_to "Edit", edit_article_path(@article) %></div>
+  <% end %>
+</div>
