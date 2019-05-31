@@ -1,0 +1,14 @@
+<%= simple_form_for @article do |f| %>
+<%= f.input :title,
+            label: "Titre de l'article",
+            autofocus: false,
+            input_html: { autocomplete: "Article's title",
+              class: 'form-control form-margin-btn'} %>
+<%= f.input :body,
+            label: "Contenu de l'article",
+            input_html: { autocomplete: "Article's content",
+              class: 'form-control form-margin-btn form-address'} %>
+<%= f.button :submit,
+              "Enregistrez l'article",
+              class: "btn btn-success btn-rounded btn-login btn-form-edit-new" %>
+<% end %>
