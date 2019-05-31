@@ -1,10 +1,6 @@
 class Project < ApplicationRecord
   belongs_to :user
-  validates :name, presence: true
-  validates :address, presence: true
-  validates :purchase_price, presence: true
-  validates :monthly_rent, presence: true
-  validates :extra_works, presence: true
+  validates :name, :address, :purchase_price, :monthly_rent, :extra_works, presence: true
 
   def acquisition_full_price
     ((self.purchase_price * 1.15) + self.extra_works)
