@@ -52,3 +52,21 @@
   color: $success;
   font-weight: bolder;
 }
+
+
+@media (max-width: 961px) {
+.main-menu {
+  top: 51px;
+  width: 250px;
+  height: 100%;
+  padding: 20px 15px;
+  font-size: 18px;
+}
+
+.main-menu-content-block {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
+}

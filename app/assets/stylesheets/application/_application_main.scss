@@ -25,3 +25,11 @@ body,
 .main-content {
   flex-grow: 1;
 }
+
+// mobile
+@media (max-width: 961px) {
+
+.footer-main {
+  min-height: 55px;
+}
+}

@@ -1,3 +1,11 @@
 .navbar-hidden-for-flashes {
   min-height: 85px;
 }
+
+@media (max-width: 961px) {
+
+.navbar-hidden-for-flashes {
+  min-height: 50px;
+}
+
+}

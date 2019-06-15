@@ -275,251 +275,224 @@
 
 .home-header1 {
   font-size: 50px;
-  // color: white;
-  // border-bottom: solid 1px white;
-  // padding-bottom: 10px;
 }
 
 .home-header2 {
   font-size: 34px;
-  // color: white;
-  // margin-top: 30px;
-  // padding: 20px 0px;
 }
 
 .home-header3 {
   font-size: 47px;
-  // color: $blue;
-  // padding: 50px 0px 0px 15px;
-}
-
-.home-nav-btn {
-  // margin-top: 35px;
-  // display: flex;
-  // justify-content: flex-start;
-  // padding-bottom: 20px
 }
 
 .btn-navigation {
   font-size: 39px;
-  // margin: 10px 35px 10px 0px;
-  // padding-left: 40px;
-  // padding-right: 40px;
 }
 
 .btn-checker {
   font-size: 39px;
-  // padding-left: 30px;
-  // padding-right: 30px;
 }
 
 #homepage-estimator {
-  // position: relative;
   font-size: 39px;
-  // border: solid 1px $gray-400;
-  // border-radius: 20px;
-  // box-shadow: 1px 1px 20px $gray-300;
-  // margin: 50px 20px;
-  // padding: 20px;
-  // padding-bottom: 50px;
   max-width: 1000px;
 }
 
-.home-input-estimator {
-  // border-style: solid;
-  // border-radius: 40px;
-  // border-color: $blue;
-  // text-align: right;
-  // padding-right: 30px;
-  // color: $gray-700;
-  // width: 475px;
-}
-
-.home-input-estimator:focus {
-  // outline: none !important;
-  // border: solid 1px $yellow;
-  // box-shadow: 1px 1px 15px $yellow;
-}
-
-.estimator-fields {
-  // margin: 50px 0px;
-  // display: flex;
-  // justify-content: space-between;
-}
-
-.estimator-tooltip {
-  // padding-left: 10px;
-}
-
-.estimator-tooltip-icon {
-  // color: $gray-500;
-  // font-size: 36px;
-}
-
-.estimator-tooltip-content {
-  // position: absolute;
-  // z-index: 1050;
-  // margin-top: 15px;
-  // padding: 20px;
-  // background-color: white;
-  // border: solid 1px $gray-400;
-  // border-radius: 20px;
-  // box-shadow: 1px 1px 20px $gray-300;
-}
-
-#estimator-tooltip-content-text {
-  // font-family: $body-font;
-  // font-size: 31px;
-  // color: $gray-700;
-  // padding-bottom: 10px;
-  // line-height: 130%;
-}
-
-#action-ne-pas {
-  // display: inline;
-  // font-size: 34px;
-  // color: black;
-}
-
-#estimator-content {
-  // margin-bottom: 100px;
-}
-
-#estimator-checker-btn {
-  // font-size: 43px;
-}
-
-#estimator-checker {
-  // position: absolute;
-  // right: 20px;
-  // bottom: 50px;
-}
-
-#action-estimator {
-  // display: flex;
-  // justify-content: space-around;
-  // margin-top: 25px;
-  // border-bottom: solid 1px $gray-400;
-}
-
-#action-title-estimator {
-  // font-size: 52px;
-  // color: $pink;
-  // padding-bottom: 15px;
-}
-
-.description-estimator {
-  // color: $gray-700;
-}
-
-.selected-estimator {
-  // color: $blue;
-  // font-weight: bolder;
-  // border-bottom: solid 1px $blue;
-}
-
 .label-estimator {
-  // display: flex;
-  // color: $gray-700;
   font-size: 39px;
 }
 
 .result-estim {
   font-size: 33px;
-  // line-height: 125%;
-  // color: $gray-700;
 }
 
 .result-estim-value {
   font-size: 45px;
-  // line-height: 150%;
-  // color: black;
-}
-
-#result-estimator {
-  // padding-bottom: 20px;
 }
 
 .javascript-disabled {
-  // position: absolute;
-  // right: 20px;
-  // bottom: 7px;
-  // color: $red;
   font-size: 19px;
-  // text-align: right;
 }
 
 .homepage-estimator-benchmark {
-  // padding: 5px 15px 100px 15px;
-  // min-width: 1000px;
   max-width: 1000px;
 }
 
 .home-quote-title h2{
   font-size: 47px;
-  // color: #6f42c1;
-  // padding-bottom: 15px;
-  // text-align: center;
-}
-
-.home-quote-content {
-  // border: solid 1px $gray-400;
-  // border-radius: 20px;
-  // box-shadow: 1px 1px 20px $gray-300;
-  // padding: 30px 15px;
 }
 
 .home-quote-text {
   font-size: 31px;
-  // font-style: italic;
-  // color: $gray-700;
-  // text-align: justify;
-  // padding: 5px 20px;
-  // line-height: 135%;
 }
 
 .home-quote-source {
   font-size: 20px;
-  // text-align: right;
-  // text-decoration: none;
-  // padding-right: 20px;
-}
-
-.home-quote-source a {
-  // text-decoration: none;
-}
-
-.homepage-estimator-cta {
-  // padding: 5px 15px 100px 15px;
 }
 
 .home-account-cta-title h2{
   font-size: 47px;
-  // color: $green;
-  // padding-bottom: 15px;
-  // text-align: center;
 }
 
 .home-cta-content {
-  // border: solid 1px $gray-400;
-  // border-radius: 20px;
-  // box-shadow: 1px 1px 20px $gray-300;
-  // padding: 30px 15px;
-  // min-height: 250px;
-  // display: flex;
-  // justify-content: space-around;
-  // align-items: center;
   max-width: 1000px;
-}
-
-.home-cta-content a{
-  // margin-right: 0;
 }
 
 .btn-home-cta {
   font-size: 39px;
-  // padding-left: 50px;
-  // padding-right: 50px;
+}
+
+}
+
+// mobile
+@media (max-width: 961px) {
+
+.home-header-content {
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+.home-header1 {
+  font-size: 28px;
+}
+
+.home-header2 {
+  margin: 0px;
+  padding-bottom: 10px;
+  font-size: 22px;
+  line-height: 150%;
+}
+
+.home-header3 {
+  font-size: 22px;
+  padding: 30px 0px 0px 20px;
+}
+
+.home-nav-btn {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 0;
+}
+
+.btn-navigation {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+#action-title-estimator {
+  font-size: 34px;
+  padding-bottom: 5px;
+}
+
+#action-estimator {
+  margin-top: 10px;
+}
+
+#estimator-content {
+  margin-bottom: 50px;
+}
+
+#estimator-checker-btn {
+  font-size: 18px;
+}
+
+#homepage-estimator {
+  font-size: 39px;
+  max-width: 1000px;
+  padding-bottom: 50px;
+  margin-top: 20px;
+}
+
+.description-estimator {
+  font-size: 16px;
+}
+
+#estimator-save-link {
+  font-size: 16px;
+  right: 175px;
+  bottom: 65px;
+}
+
+.label-estimator {
+  font-size: 16px;
+  align-items: center;
+}
+
+.estimator-tooltip {
+  padding-left: 5px;
+}
+
+.estimator-tooltip-icon {
+  font-size: 14px;
+  padding-left: 0px;
+}
+
+.home-input-estimator {
+  border-radius: 30px;
+  padding-right: 30px;
+  width: 200px;
+  font-size: 24px;
+}
+
+.estimator-fields {
+  margin: 25px 0px;
+}
+
+.result-estim {
+  font-size: 14px;
+}
+
+.result-estim-value {
+  font-size: 16px;
+}
+
+#estimator-eraser {
+  font-size: 18px;
+}
+
+.javascript-disabled {
+  font-size: 19px;
+}
+
+.homepage-estimator-benchmark {
+  padding: 20px 5px;
+  margin-bottom: 25px;
+}
+
+.home-quote-title h2{
+  font-size: 20px;
+}
+
+.home-quote-text {
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.home-quote-source {
+  font-size: 20px;
+}
+
+.homepage-estimator-cta {
+  padding: 5px 0px 50px 0px;
+}
+
+.home-account-cta-title h2{
+  font-size: 20px;
+}
+
+.home-cta-content {
+  max-width: 1000px;
+  flex-direction: column;
+}
+
+.btn-home-cta {
+  font-size: 18px;
+}
+
+.footer-main {
+  min-height: 55px;
 }
 
 }
