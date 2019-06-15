@@ -49,3 +49,50 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+// mobile
+@media (max-width: 961px) {
+
+.btn-login {
+  min-width: 100px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.login-card {
+  font-size: 20px;
+  padding-top: 25px;
+}
+
+.login-card input {
+  font-size: 20px;
+}
+
+.login-card input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+  margin-top: 5px;
+}
+
+#login-title {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.user_remember_me {
+  margin: 25px 0px 15px 0px;
+}
+
+.form-check-label {
+  padding-left: 15px;
+}
+
+.login-form-other-links {
+  padding-left: 10px;
+  padding-top: 15px;
+  font-size: 16px;
+}
+
+}

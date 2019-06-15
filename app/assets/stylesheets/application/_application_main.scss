@@ -29,7 +29,13 @@ body,
 // mobile
 @media (max-width: 961px) {
 
-.footer-main {
-  min-height: 55px;
+.alert {
+  font-size: 16px !important;
 }
+
+.close {
+  font-size: 32px !important;
 }
+
+}
+

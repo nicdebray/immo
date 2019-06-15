@@ -6,7 +6,6 @@
   grid-template-columns: 40% 35% 25%;
   grid-template-rows: 20% 10% 10% 26% 12% 10% 10%;
   height: 1000px;
-
 }
 
 .project-card-name {
@@ -192,44 +191,12 @@
 @media (min-width:961px) {
 
 .card-project {
-  // position: relative;
   font-size: 26px;
-  // margin: 20px 0px 30px 0px;
-  // display: grid;
-  // grid-template-columns: 40% 35% 25%;
-  // grid-template-rows: 20% 10% 10% 26% 12% 10% 10%;
   height: 750px;
-
-}
-
-.project-card-name {
-  // grid-column-start: 1;
-  // grid-column-end: 3;
-  // grid-row-start: 1;
-  // grid-row-end: 2;
-  // align-self: end;
-  // overflow: scroll;
 }
 
 .project-card-name-content {
-  // color: $pink;
   font-size: 52px;
-}
-
-.project-card-address {
-  // grid-column-start: 1;
-  // grid-column-end: end;
-  // grid-row-start: 2;
-  // grid-row-end: 2;
-}
-
-.project-card-address-content {
-  // align-self: start;
-  // color: $gray-500;
-}
-
-.project-card-titles {
-  // color: $cyan;
 }
 
 .project-card-contents {
@@ -237,154 +204,103 @@
 }
 
 .card-all-icons {
-  // grid-column-start: 3;
-  // grid-column-end: end;
-  // grid-row-start: 1;
-  // grid-row-end: 3;
-  // align-self: start;
-  // justify-self: end;
-  // padding-right: 20px;
   font-size: 32px;
-  // color: $gray-500;
-}
-
-.card-all-icons-content {
-  // position: absolute;
-  // right: 58px;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-between;
-  // width: 300px;
-  // height: 200px;
-  // padding: 23px;
-  // background-color: white;
-  // border: solid 1px $gray-400;
-  // border-radius: 20px;
-  // box-shadow: 1px 1px 20px $gray-300;
-  // color: $blue;
-}
-
-.card-all-edit,
-.card-all-delete {
-  // display: flex;
-}
-
-.card-all-edit-text,
-.card-all-delete-text {
-  // padding-left: 20px;
-}
-
-.project-card-data-title {
-  // grid-column-start: 1;
-  // grid-column-end: 3;
-  // grid-row-start: 3;
-  // grid-row-end: 3;
-  // align-self: center;
-}
-
-.project-card-data-title-content {
-  // font-weight: bolder;
-}
-
-.project-card-data {
-  // grid-column-start: 1;
-  // grid-column-end: 3;
-  // grid-row-start: 4;
-  // grid-row-end: 5;
-}
-
-.project-card-data-content {
-  // display: flex;
-  // justify-content: space-between;
-  // padding-right: 30%;
-}
-
-.project-card-rental-yield-title {
-  // grid-column-start: 3;
-  // grid-column-end: end;
-  // grid-row-start: 3;
-  // grid-row-end: 3;
-  // align-self: center;
-}
-
-.project-card-rental-yield-title-content {
-  // font-weight: bolder;
-}
-
-.project-card-rental-yield {
-  // grid-column-start: 3;
-  // grid-column-end: end;
-  // grid-row-start: 4;
-  // grid-row-end: 4;
-  // justify-self: center;
-}
-
-.project-card-capital-gain-15-title {
-  // grid-column-start: 1;
-  // grid-column-end: 3;
-  // grid-row-start: 5;
-  // grid-row-end: 5;
-  // align-self: center;
-}
-
-.project-card-capital-gain-15-title-content {
-  // font-weight: bolder;
-}
-
-.project-card-capital-gain-15 {
-  // grid-column-start: 1;
-  // grid-column-end: 3;
-  // grid-row-start: 6;
-  // grid-row-end: 7;
-}
-
-.project-card-project-return-15 {
-  // grid-column-start: 1;
-  // grid-column-end: end;
-  // grid-row-start: 7;
-  // grid-row-end: 8;
-  // overflow: scroll;
 }
 
 .project-return-15-text {
-  // position: absolute;
-  // z-index: 1050;
-  // margin-top: 15px;
-  // padding: 20px;
-  // background-color: white;
-  // border: solid 1px $gray-400;
-  // border-radius: 20px;
-  // box-shadow: 1px 1px 20px $gray-300;
   font-size: 22px;
-  // color: $gray-700;
-  // width: 750px;
-  // height: 300px;
-  // overflow: scroll;
-  // bottom: 100px;
 }
 
 .btn-index-all {
   font-size: 39px;
-  // margin: 10px 0px
 }
 
 .project-card-icon {
   font-size: 20px;
 }
 
-.project-card-contents-label {
-  // color: $gray-600;
+.project-card-tooltip-icon {
+  font-size: 32px;
+}
+
+}
+
+// mobile
+@media (max-width: 961px) {
+
+.project-card-capital-gain-15-title {
+  grid-column-end: 4;
+}
+
+.card {
+  padding: 15px;
+}
+
+.card-all-icons-content-dots {
+  font-size: 24px;
+}
+
+.card-project {
+  font-size: 26px;
+  grid-template-columns: 40% 30% 30%;
+  grid-template-rows: 15% 15% 10% 26% 12% 10% 10%;
+  height: 475px;
+}
+
+.project-card-name-content {
+  font-size: 28px;
+  padding-bottom: 10px;
+}
+
+.project-card-address-content {
+  font-size: 14px;
+}
+
+.project-card-data-title-content {
+  font-size: 14px;
+}
+
+.project-card-data-content {
+  padding-right: 30px;
+}
+
+.project-card-icon {
+  font-size: 12px;
+}
+
+.project-card-rental-yield-title-content {
+  font-size: 14px;
+}
+
+.project-card-contents {
+  font-size: 16px;
+}
+
+.card-all-icons {
+  font-size: 32px;
+}
+
+.project-card-capital-gain-15-title-content {
+  font-size: 18px;
+}
+
+.project-return-15-text {
+  border-radius: 10px;
+  margin-top: 15px;
+  padding: 20px;
+  width: 320px;
+  height: 200px;
+  overflow: scroll;
+  bottom: 85px;
+  font-size: 14px;
+}
+
+.btn-index-all {
+  font-size: 39px;
 }
 
 .project-card-tooltip-icon {
-  // color: $gray-500;
-  font-size: 32px;
-  // padding-left: 5px;
+  font-size: 18px;
 }
-
-}
-
-@media (max-width: 961px) {
-
 
 }
