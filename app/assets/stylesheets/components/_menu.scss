@@ -2,12 +2,12 @@
   position: absolute;
   z-index: 1050;
   right: 0;
-  top: 86px;
+  top: 70px;
   background-color: white;
-  width: 550px;
+  width: 450px;
   height: 100%;
   padding: 80px 25px;
-  font-size: 48px;
+  font-size: 32px;
   box-shadow: -1px 0px 3px $gray-300;
 }
 
@@ -54,7 +54,7 @@
 }
 
 
-@media (max-width: 961px) {
+@media (max-width: 650px) {
 .main-menu {
   top: 51px;
   width: 250px;

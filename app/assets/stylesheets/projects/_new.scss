@@ -30,7 +30,7 @@
   background-color: rgba(231, 242, 255, 0.5);
 }
 
-@media (min-width:961px) {
+@media (min-width: 650px) {
 
 #estimator-checker-new-project {
   // width: 400px;
@@ -67,7 +67,7 @@
 }
 
 // mobile
-@media (max-width: 961px) {
+@media (max-width: 650px) {
 
 #estimator-checker-new-project {
   width: 250px;

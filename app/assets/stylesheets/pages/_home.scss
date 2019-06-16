@@ -5,6 +5,7 @@
 .home-header-content {
   padding: 40px 15px;
   background-size: cover;
+  background-position: center center;
 }
 
 .home-header1 {
@@ -214,7 +215,7 @@
   font-size: 52px;
   color: #6f42c1;
   padding-bottom: 15px;
-  text-align: center;
+  padding-left: 50px;
 }
 
 .home-quote-text {
@@ -245,7 +246,7 @@
   font-size: 52px;
   color: $green;
   padding-bottom: 15px;
-  text-align: center;
+  padding-left: 50px;
 }
 
 .home-cta-content {
@@ -270,8 +271,16 @@
   padding-right: 50px;
 }
 
+// more adapted for desktop
+@media (min-width: 650px) {
 
-@media (min-width: 961px) {
+.home-header-content {
+  padding-top: 20px;
+}
+
+#estimator-content {
+  margin-bottom: 75px;
+}
 
 .home-header1 {
   font-size: 50px;
@@ -279,35 +288,88 @@
 
 .home-header2 {
   font-size: 34px;
+  margin-top: 10px;
 }
 
 .home-header3 {
-  font-size: 47px;
+  font-size: 40px;
+  padding-top: 25px;
 }
 
 .btn-navigation {
-  font-size: 39px;
+  font-size: 28px;
 }
 
-.btn-checker {
-  font-size: 39px;
+#action-title-estimator {
+  font-size: 38px;
+  padding-bottom: 0;
 }
 
 #homepage-estimator {
   font-size: 39px;
-  max-width: 1000px;
+  min-width: 650px;
+  max-width: 750px;
+  margin-top: 25px;
+}
+
+.description-estimator {
+  font-size: 28px;
 }
 
 .label-estimator {
-  font-size: 39px;
+  font-size: 24px;
+}
+
+.estimator-tooltip {
+  padding-left: 5px;
+}
+
+.estimator-tooltip-icon {
+  font-size: 18px;
+  padding-left: 0px;
+}
+
+.home-input-estimator {
+
+  padding-right: 15px;
+  min-width: 75px;
+  max-width: 400px;
+  font-size: 20px;
+}
+
+#estimator-rental-yield {
+  padding: 0px 15px;
+}
+
+#estimator-save-link {
+  font-size: 20px;
+  right: 175px;
+  bottom: 65px;
+}
+
+#estimator-checker-btn {
+  font-size: 20px;
 }
 
 .result-estim {
   font-size: 33px;
 }
 
+#result-estimator {
+  padding-bottom: 0;
+}
+
+.result-estim {
+  font-size: 20px;
+  padding-right: 10px;
+}
+
 .result-estim-value {
-  font-size: 45px;
+  font-size: 24px;
+}
+
+#estimator-eraser {
+  font-size: 22px;
 }
 
 .javascript-disabled {
@@ -315,15 +377,17 @@
 }
 
 .homepage-estimator-benchmark {
-  max-width: 1000px;
+  min-width: 650px;
+  max-width: 750px;
+  padding-bottom: 25px;
 }
 
 .home-quote-title h2{
-  font-size: 47px;
+  font-size: 32px;
 }
 
 .home-quote-text {
-  font-size: 31px;
+  font-size: 28px;
 }
 
 .home-quote-source {
@@ -331,21 +395,22 @@
 }
 
 .home-account-cta-title h2{
-  font-size: 47px;
+  font-size: 32px;
 }
 
 .home-cta-content {
-  max-width: 1000px;
+  min-width: 650px;
+  max-width: 750px;
 }
 
 .btn-home-cta {
-  font-size: 39px;
+  font-size: 28px;
 }
 
 }
 
 // mobile
-@media (max-width: 961px) {
+@media (max-width: 650px) {
 
 .home-header-content {
   padding-top: 20px;

@@ -188,7 +188,7 @@
   padding-left: 5px;
 }
 
-@media (min-width:961px) {
+@media (min-width: 650px) {
 
 .card-project {
   font-size: 26px;
@@ -226,7 +226,7 @@
 }
 
 // mobile
-@media (max-width: 961px) {
+@media (max-width: 650px) {
 
 .project-card-capital-gain-15-title {
   grid-column-end: 4;
