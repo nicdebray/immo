@@ -1,9 +1,14 @@
 .btn-login {
   min-width: 200px;
   margin-bottom: 25px;
-  margin-top: 50px;
+  margin-top: 25px;
   padding-left: 40px;
   padding-right: 40px;
+  font-size: 28px !important;
+}
+
+.form-group label{
+  font-size: 28px;
 }
 
 .login-card {
@@ -12,13 +17,13 @@
 }
 
 .login-card input {
-  font-size: 42px;
+  font-size: 28px;
 }
 
 .login-card input[type="checkbox"] {
   height: 35px;
   width: 35px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .card {
@@ -29,26 +34,36 @@
 
 #login-title {
   padding: 10px 0px;
-  font-size: 64px;
-  margin-bottom: 30px;
+  font-size: 48px;
 }
 
 .user_remember_me {
   margin: 25px 0px 15px 0px;
 }
 .form-check-label {
-  padding-left: 50px;
+  padding-left: 20px;
 }
 
 .login-form-other-links {
   padding-left: 10px;
-  padding-top: 50px;
 }
 
 .login-form-other-links a {
   text-decoration: none;
   cursor: pointer;
+  font-size: 28px;
 }
+
+// more adapted for desktop
+@media (min-width: 650px) {
+
+.card {
+  min-width: 650px;
+  max-width: 750px;
+}
+
+}
+
 
 // mobile
 @media (max-width: 650px) {

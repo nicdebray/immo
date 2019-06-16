@@ -30,12 +30,15 @@
   background-color: rgba(231, 242, 255, 0.5);
 }
 
+// more adapted for desktop
 @media (min-width: 650px) {
 
+.card p {
+  font-size: 32px;
+}
+
 #estimator-checker-new-project {
-  // width: 400px;
   font-size: 26px;
-  // margin-top: 25px;
 }
 
 .clear-quick-checker {

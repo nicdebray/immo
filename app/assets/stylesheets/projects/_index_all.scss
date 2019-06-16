@@ -188,6 +188,7 @@
   padding-left: 5px;
 }
 
+// more adapted for desktop
 @media (min-width: 650px) {
 
 .card-project {
@@ -209,6 +210,9 @@
 
 .project-return-15-text {
   font-size: 22px;
+  height: 210px;
+  padding: 20px;
+  line-height: 150%;
 }
 
 .btn-index-all {
